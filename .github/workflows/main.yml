@@ -10,3 +10,4 @@ jobs:
       - uses: actions/upload-pages-artifact@master
         with: 
           path: out/
+      - uses: actions/deploy-pages@master
