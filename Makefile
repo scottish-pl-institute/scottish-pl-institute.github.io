@@ -7,7 +7,7 @@ SUPPRESS=>/dev/null
 STATICS=$(wildcard images/*) css/default.css
 PAGES_FILES=$(shell ls -1 pages | sed "s/^/pages\//" | sort)
 PAGES=$(shell echo $(PAGES_FILES) | sed 's/\.[^\s]*$$/ /g' | sed 's/\.[^\s]* / /g' | sed "s/pages\///g")
-
+PDFS=$(shell ls -1 pdfs)
 BLUE=$(shell tput setaf 4)
 PALEBLUE=$(shell tput setaf 12)
 GREY=$(shell tput setaf 8)
@@ -17,6 +17,10 @@ YELLOW=$(shell tput setaf 3)
 PURPLE=$(shell tput setaf 5)
 SGR0=$(shell tput sgr0)
 
+$(PDFS:%=out/%): out/%: pdfs/%
+	@echo '$(PALEBLUE)Copying static PDF $(BOLD)$<$(SGR0)'
+	@cp $< $@
+
 $(STATICS:%=out/%): out/%: %
 	@echo '$(PALEBLUE)Copying static file $(BOLD)$<$(SGR0)'
 	@mkdir -p $(@D) && cp $< $@
@@ -24,7 +28,7 @@ $(STATICS:%=out/%): out/%: %
 out:
 	@mkdir out
 
-all: out $(PAGES:%=out/%.html) $(STATICS:%=out/%) out/index.html
+all: out $(PAGES:%=out/%.html) $(PDFS:%=out/%) $(STATICS:%=out/%) out/index.html
 
 preview:
 	@cd out && python -m SimpleHTTPServer 8000
