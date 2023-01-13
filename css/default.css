@@ -1,0 +1,62 @@
+body {
+  font-family: 'Lato', sans-serif;
+  background: url(/images/bg.jpg);
+  background-size: cover;
+  margin:0;
+}
+.twitter-timeline {
+  width:40%;
+  float:right;
+  margin-left:40px;
+  margin-bottom:20px !important;
+}
+nav a {
+  color:darkblue;
+  margin-left:10px;
+}
+nav > p {
+  display: inline;
+}
+header > h1 {
+  margin:0;
+  padding:10px;
+}
+footer {
+    background: aliceblue;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid darkblue;
+    border-top: 0;
+    box-sizing: border-box;
+}
+header {
+  background:aliceblue;
+  max-width:1024px;
+  margin-left:auto;
+  margin-right:auto;
+  border-left: 1px solid darkblue;
+  border-right: 1px solid darkblue;
+  padding:10px;
+  box-sizing:border-box;
+}
+nav {
+  background:lightsteelblue;
+  max-width:1024px;
+  margin-left:auto;
+  margin-right:auto;
+  border-left: 1px solid darkblue;
+  border-right: 1px solid darkblue;
+  padding:10px;
+  box-sizing:border-box;
+}
+article {
+  background:white;
+  max-width:1024px;
+  margin-left:auto;
+  margin-right:auto;
+  border-left: 1px solid darkblue;
+  border-right: 1px solid darkblue;
+  box-sizing:border-box;
+  padding:40px;
+}
