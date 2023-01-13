@@ -5,7 +5,7 @@ start: all
 SUPPRESS=>/dev/null
 
 STATICS=$(wildcard images/*) css/default.css
-PAGES_FILES=$(shell find pages -maxdepth 1 -regex '.*(\.md)$$' -type f | sort)
+PAGES_FILES=$(shell ls -1 pages | sed "s/^/pages\//" | sort)
 PAGES=$(shell echo $(PAGES_FILES) | sed 's/\.[^\s]*$$/ /g' | sed 's/\.[^\s]* / /g' | sed "s/pages\///g")
 
 BLUE=$(shell tput setaf 4)
