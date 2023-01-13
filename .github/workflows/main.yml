@@ -1,0 +1,10 @@
+name: Build site
+on: push
+jobs:
+  build-site:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: nikeee/setup-pandoc@v1
+      - run: make
+ 
