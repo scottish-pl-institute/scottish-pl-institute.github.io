@@ -61,4 +61,5 @@ article {
   border-right: 1px solid darkblue;
   box-sizing:border-box;
   padding:40px;
+  padding-top:20px;
 }
