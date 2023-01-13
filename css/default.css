@@ -4,11 +4,13 @@ body {
   background-size: cover;
   margin:0;
 }
+@media (min-width: 800px) {
 .twitter-timeline {
   width:40%;
   float:right;
   margin-left:40px;
   margin-bottom:20px !important;
+}
 }
 nav a {
   color:darkblue;
