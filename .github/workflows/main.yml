@@ -7,4 +7,6 @@ jobs:
       - uses: actions/checkout@master
       - uses: nikeee/setup-pandoc@v1
       - run: make
- 
+      - uses: actions/upload-pages-artifact@master
+        with: 
+          path: out/
