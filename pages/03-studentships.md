@@ -62,7 +62,7 @@ SPLI coordinates events and networking opportunities for PhD students from all o
 - Filip Sieczkowski
 - Marko Doko
 
-### University of St. Andrews
+### University of St Andrews
 - Edwin Brady (dependent types, type-driven development, domain-specific languages, reasoning about effects)
 - Susmit Sarkar (formal architecture, memory consistency, compiler correctness)
 - Chris Brown (refactoring, energy-aware programming, parallel programming)

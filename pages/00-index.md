@@ -6,7 +6,7 @@ title: Home
 
 The Scottish Programming Languages Institute (SPLI) co-ordinates community events which enhance programming languages research in Scotland.
 
-It unites researchers in programming languages from the University of Edinburgh, the University of Glasgow, Heriot-Watt University, the University of St. Andrews, the University of Stirling, the University of Strathclyde, and the University of the West of Scotland. To learn more about the structure of the SPLI, see our [organisation](/01-people.html) page.
+It unites researchers in programming languages from the University of Edinburgh, the University of Glasgow, Heriot-Watt University, the University of St Andrews, the University of Stirling, the University of Strathclyde, and the University of the West of Scotland. To learn more about the structure of the SPLI, see our [organisation](/01-people.html) page.
 
 Researchers within SPLI cover a broad range of topics under the Programming Languages umbrella, ranging from theoretical foundations, semantics and verification to implementation, compilation and optimisation. For students interested in pursuing a PhD in Programming Languages at an SPLI institution, a list of potential supervisors can be found on our [studentships](/03-studentships.html) page.
 

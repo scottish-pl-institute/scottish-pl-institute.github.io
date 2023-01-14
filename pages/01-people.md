@@ -31,7 +31,7 @@ title: Organisation
 
 ### Heriot-Watt University
 
-### University of St. Andrews
+### University of St Andrews
 
 ### University of Stirling
 
