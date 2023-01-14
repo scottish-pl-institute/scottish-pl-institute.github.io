@@ -19,10 +19,10 @@ title: Organisation
 - Patrick Maier (University of Stirling)
 - James McKinna (Heriot-Watt University)
 - André Videla (University of Strathclyde)
-- Matthew Le Brun (University of Glasgow) 
+- Matthew Le Brun (University of Glasgow)
 - **Publicity Chair**: Liam O'Connor (University of Edinburgh)
 
-## Members
+## Member Institutions
 
 
 ### University of Edinburgh
@@ -31,7 +31,7 @@ title: Organisation
 
 ### Heriot-Watt University
 
-### University of St. Andrews
+### University of St Andrews
 
 ### University of Stirling
 
