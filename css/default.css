@@ -53,6 +53,7 @@ nav {
   box-sizing:border-box;
 }
 article {
+  overflow:hidden;
   background:white;
   max-width:1024px;
   margin-left:auto;
