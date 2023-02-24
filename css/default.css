@@ -4,6 +4,13 @@ body {
   background-size: cover;
   margin:0;
 }
+.logos {
+text-align:center;
+}
+.logos img {
+width:220px;
+padding:25px;
+}
 @media (min-width: 800px) {
 .twitter-timeline {
   width:40%;
