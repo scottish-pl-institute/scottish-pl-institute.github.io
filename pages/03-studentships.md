@@ -76,18 +76,30 @@ SPLI coordinates events and networking opportunities for PhD students from all o
 - Patrick Maier
 
 ### University of Strathclyde
-- Neil Ghani
-- Conor McBride
-- Glynn Winskell
-- Bob Atkey
-- Radu Mardare
-- Clemens Kupke
-- Fredrik Nordvall Forsberg
-- Jules Hedges
-- William Waites
-- Jan de Muijnck-Hughes
-- Ross Horne
-- Guillaume Allais
+
+- **Guillaume Allais**
+  - Type-driven programming, Correct-by-construction methodology, Proof automation, Generic programming, User experience of interactive compilers
+- **Bob Atkey**
+  - Logic, Category theory, Type theory, and denotational semantics
+- **Neil Ghani**
+  - Category theory, Type theory, Functional programming, Game theory, Machine learning
+- **Jules Hedges**
+  - Applications of [category theory, type theory, functional programming, etc.] in [economics, machine learning, statistics, control, etc.]
+- **Ross Horne**
+  - Protocol verification (equivalence checking and privacy), Linked Data, Session Types and Proof Theory, Attack Trees, and Logic on Graphs
+- **Clemens Kupke**
+  - Coalgebraic modelling of systems, Logical verification/model-checking, Fixpoint logics and their game-theoretic semantics, Logics for knowledge representation and databases, Automata theory
+- **Radu Mardare**
+  - Logics for algebras and co-algebras, Quantitative algebraic reasoning, Approximation theories for systems, Reasoning about probabilistic and stochastic systems, Theories of bisimulation, Behavioural metrics, Metrics and topological approach to model theory
+- **Conor McBride**
+  - dependent type theory, functional programming, effects and handlers, programming language design and metatheory, and the category theoretic underpinnings of all of the above
+- **Jan de Muijnck-Hughes**
+  - Applications of programming language theory and technologies (namely type systems, dependent types, and functional programming) to make systems more trustworthy
+- **Fredrik Nordvall Forsberg**
+  - Dependent type theory, especially homotopy type theory, and its semantics and applications, Constructive mathematics, Categorical semantics of programming languages
+- **William Waites**
+  - Modelling of biological systems using process calculi, Applications of mathematics to public health, Generative models of synthetic populations, Low-carbon data collection for marine ecosystems and modelling thereof
+
 
 ### University of the West of Scotland
 - Paul Keir
