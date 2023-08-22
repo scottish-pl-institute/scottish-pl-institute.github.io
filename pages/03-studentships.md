@@ -2,7 +2,7 @@
 title: Studentships
 ---
 
-SPLI coordinates events and networking opportunities for PhD students from all of our member institutions. Many academics at our member institutions are open to new PhD students in various areas related to Programming Languages research. Below we list possible supervisors from our member institutions as well as a brief description of their research interests. 
+SPLI coordinates events and networking opportunities for PhD students from all of our member institutions. Many academics at our member institutions are open to new PhD students in various areas related to Programming Languages research. Below we list possible supervisors from our member institutions as well as a brief description of their research interests.
 
 ### University of Edinburgh
 - Myrto Arapinis (Provable security, including Verification of cryptographic protocols, Formal models, Protocol composition, Applied cryptography, Quantum cryptography with a particular interest in electronic voting)
@@ -40,7 +40,7 @@ SPLI coordinates events and networking opportunities for PhD students from all o
 - Jeremy Singer (managed runtime systems)
 - Colin Perkins (protocol specifications and standards)
 - Ornela Dardha (behavioural types, mechanised programming language theory)
-- Michele Sevegnani (concurrent modelling languages) 
+- Michele Sevegnani (concurrent modelling languages)
 - Jose Cano Reyes (hardware-software co-design, edge computing)
 - Gerardo Aragon Camarasa (programming languages for robotics)
 - Gul Calikli (software engineering and programming languages)
@@ -50,7 +50,7 @@ SPLI coordinates events and networking opportunities for PhD students from all o
 
 ### Heriot-Watt University
 - Ekaterina Komendantskaya
-- Jurriaan Hage 
+- Jurriaan Hage
 - Lilia Georgieva
 - Rob Stewart
 - Hans-Wolfgang Loidl
@@ -66,7 +66,7 @@ SPLI coordinates events and networking opportunities for PhD students from all o
 - Edwin Brady (dependent types, type-driven development, domain-specific languages, reasoning about effects)
 - Susmit Sarkar (formal architecture, memory consistency, compiler correctness)
 - Chris Brown (refactoring, energy-aware programming, parallel programming)
-- Olexandr Konovalov (programming language education, modelling) 
+- Olexandr Konovalov (programming language education, modelling)
 - Tom Spink (compiler implementations, runtime systems, security)
 - Özgür Akgün (domain-specific languages, constraint solutions, automated configuration)
 - Ian Miguel (constraint modelling and solving)
@@ -85,7 +85,9 @@ SPLI coordinates events and networking opportunities for PhD students from all o
 - Fredrik Nordvall Forsberg
 - Jules Hedges
 - William Waites
+- Jan de Muijnck-Hughes
+- Ross Horne
+- Guillaume Allais
 
 ### University of the West of Scotland
 - Paul Keir
-
