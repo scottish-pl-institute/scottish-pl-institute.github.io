@@ -80,7 +80,7 @@ SPLI coordinates events and networking opportunities for PhD students from all o
 - **Guillaume Allais**
   - Type-driven programming, Correct-by-construction methodology, Proof automation, Generic programming, User experience of interactive compilers
 - **Bob Atkey**
-  - Logic, Category theory, Type theory, and denotational semantics
+  - formal analysis of programming languages via type theory, denotational semantics, and theorem provers
 - **Neil Ghani**
   - Category theory, Type theory, Functional programming, Game theory, Machine learning
 - **Jules Hedges**
