@@ -2,7 +2,7 @@
 title: Studentships
 ---
 
-SPLI coordinates events and networking opportunities for PhD students from all of our member institutions. Many academics at our member institutions are open to new PhD students in various areas related to Programming Languages research. Below we list possible supervisors from our member institutions as well as a brief description of their research interests. 
+SPLI coordinates events and networking opportunities for PhD students from all of our member institutions. Many academics at our member institutions are open to new PhD students in various areas related to Programming Languages research. Below we list possible supervisors from our member institutions as well as a brief description of their research interests.
 
 ### University of Edinburgh
 - Myrto Arapinis (Provable security, including Verification of cryptographic protocols, Formal models, Protocol composition, Applied cryptography, Quantum cryptography with a particular interest in electronic voting)
@@ -40,7 +40,7 @@ SPLI coordinates events and networking opportunities for PhD students from all o
 - Jeremy Singer (managed runtime systems)
 - Colin Perkins (protocol specifications and standards)
 - Ornela Dardha (behavioural types, mechanised programming language theory)
-- Michele Sevegnani (concurrent modelling languages) 
+- Michele Sevegnani (concurrent modelling languages)
 - Jose Cano Reyes (hardware-software co-design, edge computing)
 - Gerardo Aragon Camarasa (programming languages for robotics)
 - Gul Calikli (software engineering and programming languages)
@@ -50,7 +50,7 @@ SPLI coordinates events and networking opportunities for PhD students from all o
 
 ### Heriot-Watt University
 - Ekaterina Komendantskaya
-- Jurriaan Hage 
+- Jurriaan Hage
 - Lilia Georgieva
 - Rob Stewart
 - Hans-Wolfgang Loidl
@@ -66,7 +66,7 @@ SPLI coordinates events and networking opportunities for PhD students from all o
 - Edwin Brady (dependent types, type-driven development, domain-specific languages, reasoning about effects)
 - Susmit Sarkar (formal architecture, memory consistency, compiler correctness)
 - Chris Brown (refactoring, energy-aware programming, parallel programming)
-- Olexandr Konovalov (programming language education, modelling) 
+- Olexandr Konovalov (programming language education, modelling)
 - Tom Spink (compiler implementations, runtime systems, security)
 - Özgür Akgün (domain-specific languages, constraint solutions, automated configuration)
 - Ian Miguel (constraint modelling and solving)
@@ -76,16 +76,30 @@ SPLI coordinates events and networking opportunities for PhD students from all o
 - Patrick Maier
 
 ### University of Strathclyde
-- Neil Ghani
-- Conor McBride
-- Glynn Winskell
-- Bob Atkey
-- Radu Mardare
-- Clemens Kupke
-- Fredrik Nordvall Forsberg
-- Jules Hedges
-- William Waites
+
+- **Guillaume Allais**
+  - Type-driven programming, Correct-by-construction methodology, Proof automation, Generic programming, User experience of interactive compilers
+- **Bob Atkey**
+  - formal analysis of programming languages via type theory, denotational semantics, and theorem provers
+- **Neil Ghani**
+  - Category theory, Type theory, Functional programming, Game theory, Machine learning
+- **Jules Hedges**
+  - Applications of [category theory, type theory, functional programming, etc.] in [economics, machine learning, statistics, control, etc.]
+- **Ross Horne**
+  - Protocol verification (equivalence checking and privacy), Linked Data, Session Types and Proof Theory, Attack Trees, and Logic on Graphs
+- **Clemens Kupke**
+  - Coalgebraic modelling of systems, Logical verification/model-checking, Fixpoint logics and their game-theoretic semantics, Logics for knowledge representation and databases, Automata theory
+- **Radu Mardare**
+  - Logics for algebras and co-algebras, Quantitative algebraic reasoning, Approximation theories for systems, Reasoning about probabilistic and stochastic systems, Theories of bisimulation, Behavioural metrics, Metrics and topological approach to model theory
+- **Conor McBride**
+  - dependent type theory, functional programming, effects and handlers, programming language design and metatheory, and the category theoretic underpinnings of all of the above
+- **Jan de Muijnck-Hughes**
+  - Applications of programming language theory and technologies (namely type systems, dependent types, and functional programming) to make systems more trustworthy
+- **Fredrik Nordvall Forsberg**
+  - Dependent type theory, especially homotopy type theory, and its semantics and applications, Constructive mathematics, Categorical semantics of programming languages
+- **William Waites**
+  - Modelling of biological systems using process calculi, Applications of mathematics to public health, Generative models of synthetic populations, Low-carbon data collection for marine ecosystems and modelling thereof
+
 
 ### University of the West of Scotland
 - Paul Keir
-
