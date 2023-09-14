@@ -17,6 +17,14 @@ YELLOW=$(shell tput setaf 3)
 PURPLE=$(shell tput setaf 5)
 SGR0=$(shell tput sgr0)
 
+# Assume we have python 2.X
+SERVE := python -m SimpleHTTPServer 8000
+
+PYTHON3_OK := $(shell command -v python)
+ifeq ('$(PYTHON3_OK)','')
+   SERVE := python3 -m http.server 8000
+endif
+
 $(PDFS:%=out/%): out/%: pdfs/%
 	@echo '$(PALEBLUE)Copying static PDF $(BOLD)$<$(SGR0)'
 	@cp $< $@
@@ -31,7 +39,7 @@ out:
 all: out $(PAGES:%=out/%.html) $(PDFS:%=out/%) $(STATICS:%=out/%) out/index.html
 
 preview:
-	@cd out && python -m SimpleHTTPServer 8000
+	@cd out && $(SERVE)
 
 clean:
 	@rm -rf out/* page_list.md page_list.html
@@ -40,9 +48,9 @@ page_list.md: $(PAGES_FILES)
 	@echo 'Generating $(BOLD)page list$(SGR0)'
 	@rm -f page_list.md
 	@for post in $^; do\
-          echo "$(GREY)  entry for:$(SGR0) " $$post; \
-          $(PANDOC) $$post -t plain --lua-filter=page_list.lua  $(SUPPRESS);\
-        done
+	  echo "$(GREY)  entry for:$(SGR0) " $$post; \
+	  $(PANDOC) $$post -t plain --lua-filter=page_list.lua  $(SUPPRESS);\
+	done
 
 page_list.html: page_list.md
 	@echo 'Generating $(BOLD)page list HTML$(SGR0)'
@@ -54,6 +62,6 @@ out/index.html: out/00-index.html
 out/%.html: pages/%.md page_list.html
 	@echo "$(BOLD)`basename $(@F) .md`:$(SGR0) Generating post html"
 	@cd pages \
-        && $(PANDOC) --include-before-body=../page_list.html -s -T "Scottish Programming Languages Institute" \
-                     --data-dir=.. -t html5 --highlight-style=tango $(<F) \
-                     -o ../out/$(@F) $(SUPPRESS)
+	&& $(PANDOC) --include-before-body=../page_list.html -s -T "Scottish Programming Languages Institute" \
+		     --data-dir=.. -t html5 --highlight-style=tango $(<F) \
+		     -o ../out/$(@F) $(SUPPRESS)
