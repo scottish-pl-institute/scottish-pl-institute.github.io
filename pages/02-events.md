@@ -2,13 +2,13 @@
 title: Events
 ---
 
-## SPLS 
+## SPLS
 
 The [Scottish Programming Languages Seminar](https://spls-series.github.io/) (SPLS) is a regular event for discussion of all aspects of programming languages.
 
 ## SPLV
 
-The [Scottish Programming Languages and Verification Summer School](https://www.macs.hw.ac.uk/splv/) (SPLV) is an annual summer school on the underlying principles needed to use or design new languages, and verify program correctness.
+The [Scottish Programming Languages and Verification Summer School](splv/) (SPLV) is an annual summer school on the underlying principles needed to use or design new languages, and verify program correctness.
 
 ## Local Seminars
 
@@ -28,6 +28,3 @@ MSP101 is a series of informal talks organised by the Mathematically Structured 
 
 ### LAIV
 LAIV seminars provide a forum for AI, machine learning, verification, programming language, security and legal experts to meet and discuss the state of the art and future directions in Verification of AI. LAIV seminars take place on Friday at 1pm. For more information, see the [LAIV webpage](https://laiv.uk/laiv-seminars/).
-
-
-
