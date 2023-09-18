@@ -4,7 +4,7 @@ title: Events
 
 ## SPLS
 
-The [Scottish Programming Languages Seminar](https://spls-series.github.io/) (SPLS) is a regular event for discussion of all aspects of programming languages.
+The [Scottish Programming Languages Seminar](spls/) (SPLS) is a regular event for discussion of all aspects of programming languages.
 
 ## SPLV
 
