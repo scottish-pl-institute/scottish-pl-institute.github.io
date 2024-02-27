@@ -46,4 +46,5 @@ title: Organisation
 <a href="https://iog.io/"><img style="width:250px;" src="/images/logo_iog.svg" alt="Input Output Global Logo"/> </a>
 <a href="https://www.janestreet.com/"><img src="/images/logo_janest.svg" alt="Jane Street Capital Logo"/> </a>
 <a href="https://www.tarides.com/"><img src="/images/logo_tarides.svg" alt="Tarides Logo"/> </a>
+<a href="https://www.well-typed.com/"><img src="/images/logo_well-typed.svg" alt="Well-Typed Logo"/> </a>
 </div>
