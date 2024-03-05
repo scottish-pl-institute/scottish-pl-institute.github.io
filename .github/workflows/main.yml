@@ -7,7 +7,7 @@ jobs:
       - uses: actions/checkout@master
       - uses: nikeee/setup-pandoc@v1
       - run: make
-      - run: chmod +rw out/*
+      - run: chmod -R +rw out
       - uses: actions/upload-pages-artifact@v3
         with: 
           path: out/
