@@ -9,9 +9,9 @@ title: Organisation
 
 ## Steering Committee
 
-- **Secretary:** Guillaume Allais (University of St Andrews)
+- **Secretary:** Robert Atkey (University of Strathclyde)
+- Guillaume Allais (University of St Andrews)
 - Ricardo Almeida (University of Edinburgh)
-- Robert Atkey (University of Strathclyde)
 - Christopher Brown (University of St Andrews)
 - Ornela Dardha (University of Glasgow)
 - Paul Keir (University of the West of Scotland)
