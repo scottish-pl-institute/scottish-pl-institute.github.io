@@ -5,7 +5,7 @@ title: Organisation
 ## Directors
 
 - **Director:** Simon Gay (University of Glasgow)
-- **Co-director:** Conor McBride (University of Strathclyde)
+- **Co-directors:** Conor McBride (University of Strathclyde) and Ekaterina Komendantskaya (Heriot-Watt University)
 
 ## Steering Committee
 
@@ -29,7 +29,8 @@ title: Organisation
 <a href="https://www.gla.ac.uk/"><img style="padding-bottom:6px; width:200px;" src="/images/glasgow.jpg" alt="University of Glasgow"/> </a>
 <a href="https://www.hw.ac.uk/"><img style="padding-bottom:6px; width:150px;" src="/images/heriot-watt.png" alt="Heriot-Watt University"/> </a>
 <a href="https://www.st-andrews.ac.uk/"><img style="padding-bottom:6px; width:200px;" src="/images/st-andrews.png" alt="University of St Andrews"/> </a>
-<a href="https://www.stirling.ac.uk/"><img style="padding-bottom:6px; width:200px;" src="/images/stirling.svg" alt="University of Stirling"/> </a> <a href="https://www.strath.ac.uk/"><img style="padding-bottom:6px; width:225px;" src="/images/strathclyde.jpg" alt="University of Strathclyde"/> </a>
+<a href="https://www.stirling.ac.uk/"><img style="padding-bottom:6px; width:200px;" src="/images/stirling.svg" alt="University of Stirling"/> </a>
+<a href="https://www.strath.ac.uk/"><img style="padding-bottom:6px; width:225px;" src="/images/strathclyde.jpg" alt="University of Strathclyde"/> </a>
 <a href="https://www.uws.ac.uk/"><img style="padding-bottom:6px; width:300px;" src="/images/uws.png" alt="University of the West of Scotland"/> </a>
 </div>
 
