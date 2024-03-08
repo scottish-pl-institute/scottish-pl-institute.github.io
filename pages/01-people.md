@@ -9,17 +9,24 @@ title: Organisation
 
 ## Steering Committee
 
-- Guillaume Allais (University of Strathclyde)
-- Ricardo Almeida (University of Edinburgh)
+- Ricardo Almeida (The University of Edinburgh)
 - **Secretary:** Robert Atkey (University of Strathclyde)
 - Christopher Brown (University of St Andrews)
-- **Publicity Chair**: Simon Fowler (University of Glasgow)
+- Mun See Chang (University of St Andrews)
+- **Publicity Chair**: Liam O'Connor (The University of Edinburgh)
+- Ornela Dardha (University of Glasgow)
+- Simon Fowler (University of Glasgow)
 - Paul Keir (University of the West of Scotland)
 - Matthew Alan Le Brun (University of Glasgow)
-- Sam Lindley (University of Edinburgh)
+- Sam Lindley (The University of Edinburgh)
 - Patrick Maier (University of Stirling)
 - Filip Sieczkowski (Heriot-Watt University)
 - André Videla (University of Strathclyde)
+
+## SPLV Representatives
+
+- **SPLV 2024 organiser:** Guillaume Allais (University of Strathclyde)
+- **SPLV Chair:** James Cheney (The University of Edinburgh)
 
 ## Member Institutions
 
