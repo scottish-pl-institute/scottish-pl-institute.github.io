@@ -30,4 +30,4 @@ MSP101 is a series of informal talks organised by the Mathematically Structured 
 LAIV seminars provide a forum for AI, machine learning, verification, programming language, security and legal experts to meet and discuss the state of the art and future directions in Verification of AI. LAIV seminars take place on Friday at 1pm. For more information, see the [LAIV webpage](https://laiv.uk/laiv-seminars/).
 
 ### Coffee House
-Coffee House seminars are organised by the Huawei Edinburgh Programming Languages Lab. Coffee house seminars take place on Tuesday at 11am in the Bayes Center. For more information, see [Coffee House web page](https://blogs.ed.ac.uk/he-lab/category/tech-talk/coffee-house/.)
+Coffee House seminars are organised by the Huawei Edinburgh Programming Languages Lab. Coffee house seminars take place on Tuesday at 11am in the Bayes Center. For more information, see the [Coffee House web page](https://blogs.ed.ac.uk/he-lab/category/tech-talk/coffee-house/.)
