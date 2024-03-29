@@ -31,7 +31,7 @@ out:
 all: out $(PAGES:%=out/%.html) $(PDFS:%=out/%) $(STATICS:%=out/%) out/index.html
 
 preview:
-	@cd out && python -m SimpleHTTPServer 8000
+	@cd out && python3 -m http.server 8000
 
 clean:
 	@rm -rf out/* page_list.md page_list.html
