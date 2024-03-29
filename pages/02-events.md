@@ -2,6 +2,18 @@
 title: Events
 ---
 
+# SPLI industrial engagement event
+
+When: Wednesday 1st May 2024, 1030am--530pm
+
+Where: Informatics Forum, Edinburgh
+
+Industrial participants:
+
+Actyx, Amazon, Azure, Codeplay, Huawei, Intel, IOG, Jane Street, Meta, Quantinuum, Tarides, Tweag, Well-Typed
+
+# Regular events
+
 ## SPLS
 
 The [Scottish Programming Languages Seminar](spls/) (SPLS) is a regular event for discussion of all aspects of programming languages.
