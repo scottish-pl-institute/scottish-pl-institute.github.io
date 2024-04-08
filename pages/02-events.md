@@ -4,13 +4,7 @@ title: Events
 
 # SPLI industrial engagement event
 
-When: Wednesday 1st May 2024, 1030am--530pm
-
-Where: Informatics Forum, Edinburgh
-
-Industrial participants:
-
-Actyx, Amazon, Azure, Codeplay, Huawei, Intel, IOG, Jane Street, Meta, Quantinuum, Tarides, Tweag, Well-Typed
+We will be running an industrial engagement event on 1st May 2024. See the [SPLI Industry Event](/04-spli24-industry.html) page for details.
 
 # Regular events
 
