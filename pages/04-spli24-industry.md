@@ -1,5 +1,5 @@
 ---
-title: SPLI 2024 Industrial Engagment Event
+title: SPLI 2024 Industrial Engagement Event
 ---
 
 # Details
@@ -7,6 +7,8 @@ title: SPLI 2024 Industrial Engagment Event
 **When:** Wednesday 1st May 2024, 10.30am–5.30pm
 
 **Where:** Informatics Forum (ground floor), Edinburgh
+
+**Organisers:** Ricardo Almeida and Sam Lindley (firstname.lastname@ed.ac.uk)
 
 # Industrial Participants
 
