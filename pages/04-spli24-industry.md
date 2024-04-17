@@ -40,7 +40,7 @@ If you have any dietary restrictions, please email Ricardo Almeida or Sam Lindle
   * Lunch (12-1pm)
   * Afternoon session (1-5.30pm):
     - Poster session by PL researchers in Scotland (1-1.30pm)
-    - Industry partner technical talks: session 1 (1.30-2.30pm)
+    - Industry partner technical talks: Session 1 (1.30-2.30pm)
     - Coffee break (2.30-3pm)
     - Industry partner technical talks: Session 2 (3-4pm)
     - Coffee break (4-4.30pm)
