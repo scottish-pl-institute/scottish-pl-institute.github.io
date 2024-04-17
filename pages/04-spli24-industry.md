@@ -28,23 +28,24 @@ title: SPLI 2024 Industrial Engagement Event
 </div>
 # Registration
 
-If you wish to attend, please [register](https://doodle.com/meeting/participate/id/ejA704Wd) by Friday the 19th of April. 
+If you wish to attend, please [register](https://doodle.com/meeting/participate/id/ejA704Wd) by Friday the 19th of April.
 
 If you have any dietary restrictions, please email Ricardo Almeida or Sam Lindley (both firstname.lastname@ed.ac.uk).
 
 # Schedule
 
-  * Morning session (10.30am-12pm): 
+  * Morning session (10.30am-12pm):
     - Presentation on Knowledge Transfer Partnerships (KTPs) by Conor McBride (co-director of SPLI)
-    - 5-min presentations from each industry partner on topics relating to Programming Languages (PL)
+    - 5-min introductions from each industry partner
   * Lunch (12-1pm)
   * Afternoon session (1-5.30pm):
     - Poster session by PL researchers in Scotland (1-1.30pm)
-    - Technical talks session 1 (1.30-2.30pm)
+    - Industry partner technical talks: session 1 (1.30-2.30pm)
     - Coffee break (2.30-3pm)
-    - Technical talks session 2 (3-4pm)
+    - Industry partner technical talks: Session 2 (3-4pm)
     - Coffee break (4-4.30pm)
-    - Technical talks session  3 (4.30-5.30pm)
+    - Industry partner technical talks: Session 3 (4.30-5.30pm)
+
 
 <!--
 
@@ -52,7 +53,7 @@ Renders weirdly at present
 
 | <span style="white-space: nowrap;">**Time**</span>  | **Event** |
 | :---: | :--- |
-| **10:30-10:50** | Presentation on Knowledge Transfer Partnerships (KTPs) by Conor McBride (co-director of SPLI) | 
+| **10:30-10:50** | Presentation on Knowledge Transfer Partnerships (KTPs) by Conor McBride (co-director of SPLI) |
 | **10:50-12:00** | 5-min presentations from each industry partner on topics relating to Programming Languages |
 | **12:00-13:00** | **Lunch** |
 | **13:00-13:30** | Poster session by PL researchers in Scotland (1-1.30pm) |
