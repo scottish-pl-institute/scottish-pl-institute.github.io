@@ -21,9 +21,9 @@ title: SPLI 2024 Industrial Engagement Event
   <a href="https://iog.io/"><img style="width:250px;" src="/images/logo_iog.svg" alt="Input Output Global Logo"/></a>
   <a href="https://www.janestreet.com/"><img src="/images/logo_janest.svg" alt="Jane Street Capital Logo"/></a>
   <a href="https://www.meta.com/"><img src="/images/logo_meta.png" alt="Meta Logo"/></a>
-  <a href="https://www.quantinuum.com/"><img style="width:200px" src="/images/logo_quantinuum.png" alt="Quantinuum Logo"/></a>
-  <a href="https://www.tweag.io/"><img style="width:200px" src="/images/logo_tweag.svg" alt="Tweag Logo"/></a>
+  <a href="https://www.quantinuum.com/"><img style="width:200px" src="/images/logo_quantinuum.svg" alt="Quantinuum Logo"/></a>
   <a href="https://www.tarides.com/"><img src="/images/logo_tarides.svg" alt="Tarides Logo"/></a>
+  <a href="https://www.tweag.io/"><img style="width:200px" src="/images/logo_tweag.svg" alt="Tweag Logo"/></a>
   <a href="https://www.well-typed.com/"><img src="/images/logo_well-typed.svg" alt="Well-Typed Logo"/></a>
 </div>
 # Registration
