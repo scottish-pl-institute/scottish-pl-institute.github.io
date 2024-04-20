@@ -28,7 +28,7 @@ title: SPLI 2024 Industrial Engagement Event
 </div>
 # Registration
 
-If you wish to attend, please [register](https://doodle.com/meeting/participate/id/ejA704Wd) by Friday the 19th of April.
+If you wish to attend, please [register](https://doodle.com/meeting/participate/id/ejA704Wd) by Wednesday the 24th of April.
 
 If you have any dietary restrictions, please email Ricardo Almeida or Sam Lindley (both firstname.lastname@ed.ac.uk).
 
