@@ -14,12 +14,13 @@ title: SPLI 2024 Industrial Engagement Event
 
 <div class="logos">
   <a href="https://www.actyx.com/"><img style="padding-bottom:6px; width:200px;" src="/images/logo_actyx.svg" alt="Actyx Logo"/></a>
-  <a href="https://www.amazon.co.uk/"><img style="padding-bottom:6px; width:200px;" src="/images/logo_amazon.svg" alt="Amazon Logo"/></a>
+  <a href="https://www.amazon.co.uk/"><img style="padding-bottom:6px; width:200px;" src="/images/aws.png" alt="AWS Logo"/></a>
   <a href="https://azure.microsoft.com/"><img style="padding-bottom:6px; width:200px;" src="/images/logo_azure.svg" alt="Azure Logo"/></a>
   <a href="https://codeplay.com/"><img src="/images/logo_codeplay.svg" alt="Codeplay Logo"/></a>
   <a href="https://www.huawei.com/"><img src="/images/logo_huawei.svg" alt="Huawei Logo"/></a>
   <a href="https://iog.io/"><img style="width:250px;" src="/images/logo_iog.svg" alt="Input Output Global Logo"/></a>
-  <a href="https://www.janestreet.com/"><img src="/images/logo_janest.svg" alt="Jane Street Capital Logo"/></a>
+  <a href="https://www.intel.com/"><img style="width:250px;" src="/images/intel.png" alt="Intel Logo"/></a>
+  <a href="https://www.janestreet.com/"><img src="/images/logo_janest.svg" alt="Jane Street Logo"/></a>
   <a href="https://www.meta.com/"><img src="/images/logo_meta.png" alt="Meta Logo"/></a>
   <a href="https://www.quantinuum.com/"><img style="width:200px" src="/images/logo_quantinuum.svg" alt="Quantinuum Logo"/></a>
   <a href="https://www.tarides.com/"><img src="/images/logo_tarides.svg" alt="Tarides Logo"/></a>
@@ -46,6 +47,38 @@ If you have any dietary restrictions, please email Ricardo Almeida or Sam Lindle
     - Coffee break (4-4.30pm)
     - Industry partner technical talks: Session 3 (4.30-5.30pm)
 
+
+  * Coffee and poster setup (1000--1030)
+
+  * Morning Session (1030--1200)
+     - Simon Gay (SPLI director): SPLI introduction
+     - Conor McBride (SPLI codirector): Knowledge Transfer Partnerships
+     - Industrial partner 5 minute introductions: Actyx, AWS, Azure, Codeplay, Huawei, IOG, Intel, Jane Street, Meta, Quantinuum, Tarides, Tweag, Well Typed
+
+  * Lunch break (1200--1245)
+ 
+  * Poster session (1245--1315)
+ 
+  * Afternoon session 1 (1315--1415)
+     - Nick Benton, Meta (30 mins)
+     - Aleksei Nurmukhametov, Intel (15 mins)
+     - Verena Beckham, Codeplay (15 mins)
+ 
+  * Coffee break (1415--1445)
+ 
+  * Afternoon session 2 (1445--1600)
+     - Arnaud Spiwack, Tweag (30 mins)
+     - Adam Gundry, Well Typed (15 mins)
+     - Alan Lawrence, Quantinuum (15 mins)
+     - Roland Kuhn, Actyx (15 mins)
+ 
+  * Break (1600--1615)
+ 
+  * Afternoon session 3 (1615--1730)
+     - Jan Midtgaard, Tarides (30 mins)
+     - Dominic Mulligan, AWS (15 mins)
+     - James Chapman, IOG (15 mins)
+     - Matthew Parkinson, Azure (15 mins)
 
 <!--
 
