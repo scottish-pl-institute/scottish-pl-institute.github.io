@@ -14,7 +14,7 @@ title: SPLI 2024 Industrial Engagement Event
 
 <div class="logos">
   <a href="https://www.actyx.com/"><img style="padding-bottom:6px; width:200px;" src="/images/logo_actyx.svg" alt="Actyx Logo"/></a>
-  <a href="https://www.amazon.co.uk/"><img style="padding-bottom:6px; width:200px;" src="/images/aws.png" alt="AWS Logo"/></a>
+  <a href="https://aws.amazon.com/"><img style="padding-bottom:6px; width:200px;" src="/images/aws.png" alt="AWS Logo"/></a>
   <a href="https://azure.microsoft.com/"><img style="padding-bottom:6px; width:200px;" src="/images/logo_azure.svg" alt="Azure Logo"/></a>
   <a href="https://codeplay.com/"><img src="/images/logo_codeplay.svg" alt="Codeplay Logo"/></a>
   <a href="https://www.huawei.com/"><img src="/images/logo_huawei.svg" alt="Huawei Logo"/></a>
