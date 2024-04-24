@@ -35,19 +35,6 @@ If you have any dietary restrictions, please email Ricardo Almeida or Sam Lindle
 
 # Schedule
 
-  * Morning session (10.30am-12pm):
-    - Presentation on Knowledge Transfer Partnerships (KTPs) by Conor McBride (co-director of SPLI)
-    - 5-min introductions from each industry partner
-  * Lunch (12-1pm)
-  * Afternoon session (1-5.30pm):
-    - Poster session by PL researchers in Scotland (1-1.30pm)
-    - Industry partner technical talks: Session 1 (1.30-2.30pm)
-    - Coffee break (2.30-3pm)
-    - Industry partner technical talks: Session 2 (3-4pm)
-    - Coffee break (4-4.30pm)
-    - Industry partner technical talks: Session 3 (4.30-5.30pm)
-
-
   * Coffee and poster setup (1000--1030)
 
   * Morning Session (1030--1200)
