@@ -43,29 +43,28 @@ If you have any dietary restrictions, please email Ricardo Almeida or Sam Lindle
      - Industrial partner 5 minute introductions: Actyx, AWS, Azure, Codeplay, Huawei, IOG, Intel, Jane Street, Meta, Quantinuum, Tarides, Tweag, Well Typed
 
   * Lunch break (1200--1245)
- 
+
   * Poster session (1245--1315)
- 
+
   * Afternoon session 1 (1315--1415)
      - Nick Benton, Meta (30 mins)
      - Aleksei Nurmukhametov, Intel (15 mins)
      - Verena Beckham, Codeplay (15 mins)
- 
+
   * Coffee break (1415--1445)
- 
+
   * Afternoon session 2 (1445--1600)
      - Arnaud Spiwack, Tweag (30 mins)
      - Adam Gundry, Well Typed (15 mins)
      - Alan Lawrence, Quantinuum (15 mins)
      - Roland Kuhn, Actyx (15 mins)
- 
-  * Break (1600--1615)
- 
-  * Afternoon session 3 (1615--1730)
+
+  * Break (1600--1630)
+
+  * Afternoon session 3 (1630--1730)
      - Jan Midtgaard, Tarides (30 mins)
      - Dominic Mulligan, AWS (15 mins)
      - James Chapman, IOG (15 mins)
-     - Matthew Parkinson, Azure (15 mins)
 
 <!--
 
