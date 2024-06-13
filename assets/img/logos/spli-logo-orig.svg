@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="48.568348mm"
+   height="17.190269mm"
+   viewBox="0 0 48.568348 17.19027"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20, custom)"
+   sodipodi:docname="spli-logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.222073"
+     inkscape:cx="195.98816"
+     inkscape:cy="62.10417"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g152427" />
+  <defs
+     id="defs2">
+    <rect
+       x="98.349411"
+       y="32.921001"
+       width="284.11877"
+       height="98.689781"
+       id="rect4191" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-1.100714,-1.0652335)">
+    <g
+       id="g152427"
+       transform="translate(-7.2558583,-10.546111)">
+      <text
+         xml:space="preserve"
+         transform="matrix(0.26458333,0,0,0.26458333,-4.6235189,2.064939)"
+         id="text4189"
+         style="font-style:normal;font-weight:normal;font-size:64px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect4191);fill:#333333;fill-opacity:1;stroke:none"><tspan
+           x="98.349609"
+           y="90.963027"
+           id="tspan10196"><tspan
+             style="font-family:'Modern Sans';-inkscape-font-specification:'Modern Sans'"
+             id="tspan10194">SPLI</tspan></tspan></text>
+      <rect
+         id="rect14981"
+         width="10.356768"
+         height="16.688095"
+         x="8.6076593"
+         y="11.862432"
+         style="fill:#0065bd;fill-opacity:1;stroke:#333333;stroke-width:0.506;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:21.8546px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.256109"
+         x="8.5224791"
+         y="27.865593"
+         id="text30610"
+         transform="scale(0.98487606,1.0153562)"><tspan
+           sodipodi:role="line"
+           id="tspan30608"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.8546px;font-family:'Standard Symbols PS';-inkscape-font-specification:'Standard Symbols PS';fill:#ffffff;stroke-width:0.256109"
+           x="8.5224791"
+           y="27.865593">λ</tspan></text>
+    </g>
+  </g>
+</svg>
