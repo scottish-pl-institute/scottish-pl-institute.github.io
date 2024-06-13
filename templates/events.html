@@ -1,0 +1,90 @@
+<!-- Page Title -->
+<div class="page-title">
+  <div class="container">
+    <h1>Events</h1>
+  </div>
+</div><!-- End Page Title -->
+
+<section id="services" class="section services">
+  <!-- Section Title -->
+  <div class="container section-title" >
+    <h2 class="">Regular Events</h2>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+    <div class="row gy-4">
+      $for(regevents)$
+      <div class="col-sm"  >
+        <div class="service-item  position-relative">
+          $if(icon)$
+          <div class="icon">
+            <i class="$icon$"></i>
+          </div>
+          $endif$
+          <a href="$url$" class="stretched-link">
+            <h3>$title$</h3>
+          </a>
+          <p>$body$</p>
+        </div>
+      </div><!-- End seminar -->
+      $endfor$
+    </div>
+  </div>
+</section><!-- /regevents Section -->
+
+<section id="services" class="section services">
+  <!-- Section Title -->
+  <div class="container section-title" >
+    <h2 class="">SPLI Events</h2>
+    <p>SPLI also organises ad-hoc events to bring SPLI members together around a particular theme of interest.</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+    <div class="row gy-4">
+      $for(splievents)$
+      <div class="col-lg-4 col-md-6"  >
+        <div class="service-item  position-relative">
+          $if(icon)$
+          <div class="icon">
+            <i class="$icon$"></i>
+          </div>
+          $endif$
+          <a href="$url$" class="stretched-link">
+            <h3>$title$</h3>
+          </a>
+          <p>$description$</p>
+        </div>
+      </div><!-- End Service Item -->
+      $endfor$
+    </div>
+  </div>
+</section><!-- /spli-events Section -->
+
+<section id="services" class="section services">
+  <!-- Section Title -->
+  <div class="container section-title" >
+    <h2 class="">Local seminars</h2>
+    <p>
+    SPLI institutions also host regular seminars which may be of wider interest. Most events are held in a hybrid format, allowing both in-person and remote participation.</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+    <div class="row gy-4">
+      $for(seminars)$
+      <div class="col-lg-4 col-md-6"  >
+        <div class="service-item  position-relative">
+          $if(icon)$
+          <div class="icon">
+            <i class="$icon$"></i>
+          </div>
+          $endif$
+          <a href="$url$" class="stretched-link">
+            <h3>$title$</h3>
+          </a>
+          <p>$body$</p>
+        </div>
+      </div><!-- End Service Item -->
+      $endfor$
+    </div>
+  </div>
+</section><!-- /spli-events Section -->
