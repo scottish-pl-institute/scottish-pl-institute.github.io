@@ -12,7 +12,7 @@ import Text.Blaze.Html5.Attributes as A
 import System.FilePath
 --------------------------------------------------------------------------------
 
-data Page = Home | Organisation | Events | Supervisors | Zulip
+data Page = Home | Organisation | News | Events | Supervisors | Zulip
     deriving (Eq)
 
 type URL = String
@@ -23,6 +23,7 @@ type EventInfo = (String, URL)
 instance Show Page where
     show Home = "Home"
     show Organisation = "Organisation"
+    show News = "News"
     show Events = "Events"
     show Supervisors = "PhD Opportunities"
     show Zulip = "Zulip"
@@ -85,6 +86,30 @@ main = hakyll $ do
     compileMarkdown "content/events/spli/*.md" Events
     -- (also need to re-load events for the navbar)
     match "content/events/spli/*.md" $ version "navItems" $ compile pandocCompiler
+
+    -- News items
+    -- TODO: Blog items pages
+     -- match "content/news/*.md" $ do
+    match "content/news/*.md" $ compile pandocCompiler
+        
+    -- News main page
+    -- TODO: PAGINATION
+    create ["news.html"] $ do
+        route idRoute
+        compile $ do
+            sCtx <- skeletonContext News
+            newsItems <- recentFirst =<< loadAll "content/news/*.md" :: Compiler [Item String] 
+
+            let itemContext = field "content-short" (\itm -> return "TODO: CONTENT SHORT")
+                                <> field "long-url" (\itm -> return "TODO: LONG URL")
+                                <> field "datetime-human" (\itm -> return "TODO: DATETIME HUMAN RENDER")
+                --
+            let itemsContext = listField "posts" itemContext (return newsItems) <> defaultContext
+            --
+            makeItem ""
+                >>= loadAndApplyTemplate "templates/blog.html" itemsContext
+                >>= loadAndApplyTemplate "templates/skeleton.html" sCtx
+                >>= relativizeUrls
 
     -- Main page
     match "content/about.md" $ do
@@ -190,7 +215,7 @@ defaultEvents :: [EventInfo]
 defaultEvents = [("All events", "/events.html"), ("SPLS", "/spls"), ("SPLV", "/splv")]
 
 menuItems :: [EventInfo] -> [(Page, String, Children)]
-menuItems eventDetails = [(Home, "/", []), (Organisation, "/organisation.html", []),
+menuItems eventDetails = [(Home, "/", []), (News, "/news.html", []), (Organisation, "/organisation.html", []),
              (Events, "/events.html", eventDetails),
              (Supervisors, "/supervisors.html", []), (Zulip, "https://spls.zulipchat.com/", [])]
 
