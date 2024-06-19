@@ -4,7 +4,7 @@ import Prelude hiding (div)
 import Control.Monad
 import Data.Monoid
 import Data.List (uncons)
-import Data.Maybe (fromMaybe)
+import Data.Maybe (fromMaybe, listToMaybe)
 import Hakyll
 import Text.Blaze.Html.Renderer.String
 import Text.Blaze.Html5 as H hiding (map, main)
@@ -87,22 +87,37 @@ main = hakyll $ do
     -- (also need to re-load events for the navbar)
     match "content/events/spli/*.md" $ version "navItems" $ compile pandocCompiler
 
+    match "content/news/*.md" $ version "shortNews" $ do
+        compile pandocCompiler
+
     -- News items
     -- TODO: Blog items pages
      -- match "content/news/*.md" $ do
-    match "content/news/*.md" $ compile pandocCompiler
-        
+    match "content/news/*.md" $ do
+        let itemContext = dateField "date" "%B %e, %Y" <> defaultContext
+        route $ setExtension "html"
+        compile $ do
+            sCtx <- skeletonContext News
+            pandocCompiler
+                >>= loadAndApplyTemplate "templates/blog-details.html"  itemContext
+                >>= loadAndApplyTemplate "templates/skeleton.html" sCtx
+                >>= relativizeUrls
+
     -- News main page
     -- TODO: PAGINATION
     create ["news.html"] $ do
         route idRoute
         compile $ do
             sCtx <- skeletonContext News
-            newsItems <- recentFirst =<< loadAll "content/news/*.md" :: Compiler [Item String] 
+            newsItems <- recentFirst =<< loadAll ("content/news/*.md" .&&. hasVersion "shortNews") :: Compiler [Item String] 
 
-            let itemContext = field "content-short" (\itm -> return "TODO: CONTENT SHORT")
-                                <> field "long-url" (\itm -> return "TODO: LONG URL")
-                                <> field "datetime-human" (\itm -> return "TODO: DATETIME HUMAN RENDER")
+            let itemContext = field "content-short" (\itm ->
+                                    return $ fromMaybe "" (listToMaybe (lines (itemBody itm))))
+                                <> field "url" (\itm -> do
+                                        let changeExt path = toFilePath path -<.> "html"
+                                        return $ changeExt $ itemIdentifier itm)
+                                <> dateField "date" "%B %e, %Y"
+                                <> defaultContext
                 --
             let itemsContext = listField "posts" itemContext (return newsItems) <> defaultContext
             --

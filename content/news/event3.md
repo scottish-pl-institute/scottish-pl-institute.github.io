@@ -1,7 +1,7 @@
 ---
 title: event 3
-datetime: 2024-06-18
-img: /assets/hero-carousel/hero-glasgow-1.jpg
+published: 2024-06-18
+img: /assets/img/hero-carousel/hero-glasgow-1.jpg
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare ultrices est. Ut tristique, neque et blandit euismod, lectus mi vehicula nisi, vel accumsan quam dui nec dui. Praesent consequat, nulla eu dictum elementum, arcu orci ornare orci, et lacinia urna velit quis quam. Suspendisse tristique velit ante, non venenatis arcu dapibus quis. Integer cursus, tortor sed elementum luctus, sapien nibh tincidunt nunc, sit amet tincidunt dui nulla id erat. Nam condimentum eros nec aliquam faucibus. Donec ultrices cursus elit, a rhoncus ante placerat ac. Vivamus lacinia rhoncus convallis.
 
