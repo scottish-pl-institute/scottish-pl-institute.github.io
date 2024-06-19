@@ -65,19 +65,46 @@
 
 <!-- About Section -->
 <section id="about" class="section about">
-
-  <div class="container">
-
+  <div class="container section-title">
+    <h2>$title$</h2>
+  </div><!-- End Section Title -->
+    <div class="container">
     <div class="row gy-4">
       <div class="col-lg-6 order-1 order-lg-2">
         <img src="/assets/img/about.jpg" class="img-fluid" alt="">
       </div>
       <div class="col-lg-6 order-2 order-lg-1 content">
-        <h2>$title$</h2>
         $body$
       </div>
     </div>
 
   </div>
-
 </section><!-- /About Section -->
+
+<!-- News section -->
+<section id="news">
+  <div class="container section-title">
+    <h2>News</h2>
+  </div><!-- End Section Title -->
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-8">
+        $for(posts)$
+        $endfor$
+      </div>
+      <div class="col-lg-4">
+        <div class="dummy-wrapper-timeline">
+          <div id="mt-container" class="mt-container">
+            <div class="mt-body" role="feed">
+                <div class="mt-loading-spinner"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="assets/js/mastodon-timeline.umd.js"></script>
+<script src="assets/js/mastodon.js"></script>
+

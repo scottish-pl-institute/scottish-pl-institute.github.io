@@ -1,0 +1,41 @@
+<main class="main">
+
+  <!-- Page Title -->
+  <div class="page-title">
+    <div class="container">
+      <h1>News</h1>
+    </div>
+  </div><!-- End Page Title -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <!-- Blog Details Section -->
+        <section id="blog-details" class="section blog-details">
+
+          <article class="article container">
+
+            $if(img)$
+            <div class="post-img">
+              <img src="$img$" alt="" class="img-fluid">
+            </div>
+            $endif$
+
+            <h2 class="title">$title$</h2>
+
+            <div class="meta-top">
+              <ul>
+                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i><time datetime="$published$">$date$</time></a></li>
+              </ul>
+            </div><!-- End meta top -->
+
+            <div class="content">
+              $body$
+            </div><!-- End post content -->
+          </article>
+        </section><!-- /Blog Details Section -->
+      </div>
+    </div>
+  </div>
+
+</main>
