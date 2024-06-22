@@ -11,6 +11,7 @@ import Text.Blaze.Html.Renderer.String
 import Text.Blaze.Html5 as H hiding (map, main)
 import Text.Blaze.Html5.Attributes as A
 import System.FilePath
+import Debug.Trace
 --------------------------------------------------------------------------------
 
 data Page = Home | Organisation | News | Events | Supervisors | Zulip
@@ -91,9 +92,6 @@ main = hakyll $ do
     -- (also need to re-load events for the navbar)
     match "content/events/spli/*.md" $ version "navItems" $ compile pandocCompiler
 
-    match "content/news/*.md" $ version "shortNews" $ do
-        compile pandocCompiler
-
     -- News items
     match "content/news/*.md" $ do
         let itemContext = dateField "date" "%B %e, %Y" <> defaultContext
@@ -105,22 +103,24 @@ main = hakyll $ do
                 >>= loadAndApplyTemplate "templates/skeleton.html" sCtx
                 >>= relativizeUrls
 
+    match "content/news/*.md" $ version "shortNews" $ compile pandocCompiler
 
-    paginator <- buildPaginateWith grouper "content/news/*" makeId
+    paginator <- buildPaginateWith grouper "content/news/*.md" makeId
 
     paginateRules paginator $ \pageNum pattern -> do
       route idRoute
       compile $ do
           sCtx <- skeletonContext News
           newsItems <- recentFirst =<< loadAll pattern
-          let itemsContext = constField "title" ("News - Page " ++ (show pageNum))
-                              <> listField "posts" shortItemContext (return newsItems)
-                              <> paginateContext paginator pageNum
-                              <> defaultContext
-          makeItem ""
-              >>= loadAndApplyTemplate "templates/blog.html" itemsContext
-              >>= loadAndApplyTemplate "templates/skeleton.html" sCtx
-              >>= relativizeUrls
+          trace ("NEWS ITEMS: " ++ (show newsItems) ++ "PATTERN: " ++ (show pattern)) $ do
+            let itemsContext = constField "title" ("News - Page " ++ (show pageNum))
+                                  <> listField "posts" shortItemContext (return newsItems)
+                                  <> paginateContext paginator pageNum
+                                  <> defaultContext
+            makeItem ""
+                >>= loadAndApplyTemplate "templates/blog.html" itemsContext
+                >>= loadAndApplyTemplate "templates/skeleton.html" sCtx
+                >>= relativizeUrls
 
     -- Redirect /news to /news/pages/1
     version "redirects" $ createRedirects [("news/index.html", "/news/page/1")] 
@@ -285,7 +285,8 @@ skeletonContext currentPage = do
 shortItemContext :: Context String
 shortItemContext =
     field "content-short" (\itm ->
-            return $ fromMaybe "" (listToMaybe (lines (itemBody itm))))
+            return $ 
+            fromMaybe "" (listToMaybe (lines (itemBody itm))))
         <> field "url" (\itm -> do
                 let changeExt path = "/content/news/" ++ (takeFileName (toFilePath path) -<.> "html")
                 return $ changeExt $ itemIdentifier itm)
