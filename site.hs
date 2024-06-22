@@ -109,17 +109,8 @@ main = hakyll $ do
         route idRoute
         compile $ do
             sCtx <- skeletonContext News
-            newsItems <- recentFirst =<< loadAll ("content/news/*.md" .&&. hasVersion "shortNews") :: Compiler [Item String] 
-
-            let itemContext = field "content-short" (\itm ->
-                                    return $ fromMaybe "" (listToMaybe (lines (itemBody itm))))
-                                <> field "url" (\itm -> do
-                                        let changeExt path = toFilePath path -<.> "html"
-                                        return $ changeExt $ itemIdentifier itm)
-                                <> dateField "date" "%B %e, %Y"
-                                <> defaultContext
-                --
-            let itemsContext = listField "posts" itemContext (return newsItems) <> defaultContext
+            newsItems <- recentFirst =<< loadAll ("content/news/*.md" .&&. hasVersion "shortNews") :: Compiler [Item String]  
+            let itemsContext = listField "posts" shortItemContext (return newsItems) <> defaultContext
             --
             makeItem ""
                 >>= loadAndApplyTemplate "templates/blog.html" itemsContext
@@ -134,12 +125,14 @@ main = hakyll $ do
                 (\(firstPic, rest) ->
                     ((constField "firstImage" (toFilePath firstPic)), (map mkPicItem rest)))
                 (uncons picsIdents)
-        let ctx = pic1
-                    <> listField "images" (bodyField "url" <> aboutInfo <> defaultContext) (return pics)
-                    <> aboutInfo
-                    <> defaultContext
         route $ customRoute $ const "index.html"
         compile $ do
+            newsItems <- recentFirst =<< loadAll ("content/news/*.md" .&&. hasVersion "shortNews") :: Compiler [Item String]  
+            let ctx = pic1
+                    <> listField "images" (bodyField "url" <> aboutInfo <> defaultContext) (return pics)
+                    <> listField "posts" shortItemContext (return $ take 5 newsItems) <> defaultContext
+                    <> aboutInfo
+                    <> defaultContext
             sCtx <- skeletonContext Home
             pandocCompiler
                 >>= loadAndApplyTemplate "templates/index.html" ctx
@@ -264,6 +257,16 @@ skeletonContext currentPage = do
     let events = defaultEvents ++ eventInfo
     return $
         constField "menu" (renderHtml $ menuHTML events currentPage)
+        <> defaultContext
+
+shortItemContext :: Context String
+shortItemContext =
+    field "content-short" (\itm ->
+            return $ fromMaybe "" (listToMaybe (lines (itemBody itm))))
+        <> field "url" (\itm -> do
+                let changeExt path = toFilePath path -<.> "html"
+                return $ changeExt $ itemIdentifier itm)
+        <> dateField "date" "%B %e, %Y"
         <> defaultContext
 
 postCtx :: Context String

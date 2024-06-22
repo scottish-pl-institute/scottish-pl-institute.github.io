@@ -87,16 +87,39 @@
     <h2>News</h2>
   </div><!-- End Section Title -->
   <div class="container">
-    <div class="row gy-4">
+    <div class="row"> 
       <div class="col-lg-8">
-        $for(posts)$
-        $endfor$
+      $for(posts)$
+      <div class="row blog-posts">
+        <div class="col-lg-12">
+          <article>
+            <h2 class="title">
+              <a href="$url$">$title$</a>
+            </h2>
+            <div class="meta-top">
+              <ul>
+                <li class="d-flex align-items-center"><i class="bi bi-clock"></i><time datetime="$published$">$date$</time></a></li>
+              </ul>
+            </div>
+
+            <div class="content">
+              $content-short$
+              <div class="read-more">
+                <a href="$url$">Read More</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+      $endfor$
       </div>
       <div class="col-lg-4">
-        <div class="dummy-wrapper-timeline">
-          <div id="mt-container" class="mt-container">
-            <div class="mt-body" role="feed">
-                <div class="mt-loading-spinner"></div>
+        <div class="mastodon-timeline">
+          <div class="dummy-wrapper-timeline">
+            <div id="mt-container" class="mt-container">
+              <div class="mt-body" role="feed">
+                  <div class="mt-loading-spinner"></div>
+              </div>
             </div>
           </div>
         </div>

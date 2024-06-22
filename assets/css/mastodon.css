@@ -677,7 +677,6 @@ body:has(dialog.mt-dialog[open]) {
 }
 
 .dummy-wrapper-timeline {
-  width: calc(100% - 1rem);
+  width: calc(100%);
   max-width: 26rem;
-  height: 500px
 }

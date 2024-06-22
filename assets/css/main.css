@@ -2406,3 +2406,8 @@ text-align:center;
 width:220px;
 padding:25px;
 }
+
+.mastodon-timeline {
+    overflow-y: scroll;
+    max-height: 750px;
+}
