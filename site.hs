@@ -5,6 +5,7 @@ import Control.Monad
 import Data.Monoid
 import Data.List (uncons)
 import Data.Maybe (fromMaybe, listToMaybe)
+import Control.Applicative
 import Hakyll
 import Text.Blaze.Html.Renderer.String
 import Text.Blaze.Html5 as H hiding (map, main)
@@ -43,6 +44,9 @@ institutions = [("University of Edinburgh", "edinburgh"),
                 ("University of Stirling", "stirling"),
                 ("University of Strathclyde", "strathclyde"),
                 ("University of the West of Scotland", "uws")]
+
+numNewsItems :: Int
+numNewsItems = 3
 --------------------------------------------------------------------------------
 
 -- Matches a file in the given glob, then copies across
@@ -91,8 +95,6 @@ main = hakyll $ do
         compile pandocCompiler
 
     -- News items
-    -- TODO: Blog items pages
-     -- match "content/news/*.md" $ do
     match "content/news/*.md" $ do
         let itemContext = dateField "date" "%B %e, %Y" <> defaultContext
         route $ setExtension "html"
@@ -103,9 +105,29 @@ main = hakyll $ do
                 >>= loadAndApplyTemplate "templates/skeleton.html" sCtx
                 >>= relativizeUrls
 
+
+    paginator <- buildPaginateWith grouper "content/news/*" makeId
+
+    paginateRules paginator $ \pageNum pattern -> do
+      route idRoute
+      compile $ do
+          sCtx <- skeletonContext News
+          newsItems <- recentFirst =<< loadAll pattern
+          let itemsContext = constField "title" ("News - Page " ++ (show pageNum))
+                              <> listField "posts" shortItemContext (return newsItems)
+                              <> paginateContext paginator pageNum
+                              <> defaultContext
+          makeItem ""
+              >>= loadAndApplyTemplate "templates/blog.html" itemsContext
+              >>= loadAndApplyTemplate "templates/skeleton.html" sCtx
+              >>= relativizeUrls
+
+    -- Redirect /news to /news/pages/1
+    version "redirects" $ createRedirects [("news/index.html", "/news/page/1")] 
+
     -- News main page
-    -- TODO: PAGINATION
-    create ["news.html"] $ do
+    {-
+    create ["news/index.html"] $ do
         route idRoute
         compile $ do
             sCtx <- skeletonContext News
@@ -116,6 +138,7 @@ main = hakyll $ do
                 >>= loadAndApplyTemplate "templates/blog.html" itemsContext
                 >>= loadAndApplyTemplate "templates/skeleton.html" sCtx
                 >>= relativizeUrls
+    -}
 
     -- Main page
     match "content/about.md" $ do
@@ -130,7 +153,7 @@ main = hakyll $ do
             newsItems <- recentFirst =<< loadAll ("content/news/*.md" .&&. hasVersion "shortNews") :: Compiler [Item String]  
             let ctx = pic1
                     <> listField "images" (bodyField "url" <> aboutInfo <> defaultContext) (return pics)
-                    <> listField "posts" shortItemContext (return $ take 5 newsItems) <> defaultContext
+                    <> listField "posts" shortItemContext (return $ take numNewsItems newsItems) <> defaultContext
                     <> aboutInfo
                     <> defaultContext
             sCtx <- skeletonContext Home
@@ -223,7 +246,7 @@ defaultEvents :: [EventInfo]
 defaultEvents = [("All events", "/events.html"), ("SPLS", "/spls"), ("SPLV", "/splv")]
 
 menuItems :: [EventInfo] -> [(Page, String, Children)]
-menuItems eventDetails = [(Home, "/", []), (News, "/news.html", []), (Organisation, "/organisation.html", []),
+menuItems eventDetails = [(Home, "/", []), (News, "/news", []), (Organisation, "/organisation.html", []),
              (Events, "/events.html", eventDetails),
              (Supervisors, "/supervisors.html", []), (Zulip, "https://spls.zulipchat.com/", [])]
 
@@ -264,7 +287,7 @@ shortItemContext =
     field "content-short" (\itm ->
             return $ fromMaybe "" (listToMaybe (lines (itemBody itm))))
         <> field "url" (\itm -> do
-                let changeExt path = toFilePath path -<.> "html"
+                let changeExt path = "/content/news/" ++ (takeFileName (toFilePath path) -<.> "html")
                 return $ changeExt $ itemIdentifier itm)
         <> dateField "date" "%B %e, %Y"
         <> defaultContext
@@ -273,3 +296,9 @@ postCtx :: Context String
 postCtx =
     dateField "date" "%B %e, %Y" `mappend`
     defaultContext
+
+grouper :: (MonadMetadata m, MonadFail m) => [Identifier] -> m [[Identifier]]
+grouper ids = (fmap (paginateEvery 5) . sortRecentFirst) ids
+
+makeId :: PageNumber -> Identifier
+makeId pageNum = fromFilePath $ "news/page/" ++ (show pageNum) ++ "/index.html"

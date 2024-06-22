@@ -68,6 +68,10 @@ body {
   font-family: var(--default-font);
 }
 
+main {
+    padding-bottom: 25px;
+}
+
 a {
   color: var(--accent-color);
   text-decoration: none;

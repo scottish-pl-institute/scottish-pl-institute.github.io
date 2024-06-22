@@ -45,6 +45,19 @@
             $endfor$
           </div>
       </section><!-- /Blog Posts Section -->
+      <div class="row">
+        <div class="col">
+          $if(previousPageNum)$
+          <a href="$previousPageUrl$">◀ Newer Entries</a>
+          $endif$&nbsp;
+        </div>
+        <div class="col"></div>
+        <div style="text-align:right;">
+          $if(nextPageNum)$
+          <a href="$nextPageUrl$">Older Entries ▶</a>
+          $endif$&nbsp;
+        </div>
+      </div>
     </div>
   </div>
 </main>
