@@ -18,16 +18,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="./assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="./assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="./assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="./assets/vendor/fontawesome/css/fontawesome.css" rel="stylesheet" />
   <link href="./assets/vendor/fontawesome/css/brands.css" rel="stylesheet" />
   <link href="./assets/vendor/fontawesome/css/solid.css" rel="stylesheet" />
   <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="./assets/css/main.css" rel="stylesheet">
+  <link href="./assets/css/mastodon.css" rel="stylesheet">
+  <link href="./assets/css/mastodon-timeline.min.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Eterna
@@ -45,14 +47,14 @@
      <div class="branding">
 
       <div class="container position-relative d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo d-flex align-items-center">
+        <a href="./" class="logo d-flex align-items-center">
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <!-- <img src="assets/img/logo.png" alt=""> -->
           <h1 class="sitename">SPLI<br></h1>
         </a>
 
         <nav id="navmenu" class="navmenu">
-          <ul><li><a href="./" class="active">Home</a></li><li><a href="./organisation.html">Organisation</a></li><li class="dropdown"><a href="./events.html"><span>Events</span><i class="bi bi-chevron-down toggle-dropdown"></i></a><ul><li><a href="./events.html">All events</a></li><li><a href="./spls">SPLS</a></li><li><a href="./splv">SPLV</a></li><li><a href="spli-industry.html">Industrial Engagement Event 2024</a></li></ul></li><li><a href="./supervisors.html">PhD Opportunities</a></li><li><a href="https://spls.zulipchat.com/">Zulip</a></li></ul>
+          <ul><li><a href="./" class="active">Home</a></li><li><a href="./news">News</a></li><li><a href="./organisation.html">Organisation</a></li><li class="dropdown"><a href="./events.html"><span>Events</span><i class="bi bi-chevron-down toggle-dropdown"></i></a><ul><li><a href="./events.html">All events</a></li><li><a href="./spls">SPLS</a></li><li><a href="./splv">SPLV</a></li><li><a href="content/events/spli/spli-industry.html">Industrial Engagement Event 2024</a></li></ul></li><li><a href="./supervisors.html">PhD Opportunities</a></li><li><a href="https://spls.zulipchat.com/">Zulip</a></li></ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
 
@@ -160,15 +162,15 @@
 
 <!-- About Section -->
 <section id="about" class="section about">
-
-  <div class="container">
-
+  <div class="container section-title">
+    <h2>About SPLI</h2>
+  </div><!-- End Section Title -->
+    <div class="container">
     <div class="row gy-4">
       <div class="col-lg-6 order-1 order-lg-2">
         <img src="./assets/img/about.jpg" class="img-fluid" alt>
       </div>
       <div class="col-lg-6 order-2 order-lg-1 content">
-        <h2>About SPLI</h2>
         <p>The Scottish Programming Languages Institute (SPLI) coordinates community events that enhance programming languages research in Scotland. It brings together researchers from the University of Edinburgh, the University of Glasgow, Heriot-Watt University, the University of St Andrews, the University of Stirling, the University of Strathclyde, and the University of the West of Scotland. Details about SPLI’s structure are available on our <a href="./organisation.html">organisation</a> page.</p>
 <p>SPLI researchers cover a wide range of topics, from theoretical foundations and semantics to implementation, compilation, and optimisation. Students interested in pursuing a PhD can find potential supervisors on our <a href="./supervisors.html">PhD Opportunities</a> page.</p>
 <p>For information on our events, such as the Scottish Programming Languages Seminar series (SPLS) and the Scottish Programming Languages and Verification Summer School (SPLV), visit our <a href="./events.html">events</a> page.</p>
@@ -178,8 +180,58 @@
     </div>
 
   </div>
-
 </section><!-- /About Section -->
+
+<!-- News section -->
+<section id="news">
+  <div class="container section-title">
+    <h2>Latest News</h2>
+  </div><!-- End Section Title -->
+  <div class="container">
+    <div class="row"> 
+      <div class="col-lg-8">
+      
+      <div class="row blog-posts">
+        <div class="col-lg-12">
+          <article>
+            <h2 class="title">
+              <a href="./content/news/new-website.html">New Website</a>
+            </h2>
+            <div class="meta-top">
+              <ul>
+                <li class="d-flex align-items-center"><i class="bi bi-clock"></i><time datetime="2024-06-21">June 21, 2024</time></a></li>
+              </ul>
+            </div>
+
+            <div class="content">
+              <p>SPLI has a new website! We will use this site to publicise all SPLI events, as well as news that will be of interest to the Scottish PL community.</p>
+              <div class="read-more">
+                <a href="./content/news/new-website.html">Read More</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+      
+      </div>
+      <div class="col-lg-4">
+        <div class="mastodon-timeline">
+          <div class="dummy-wrapper-timeline">
+            <div id="mt-container" class="mt-container">
+              <div class="mt-body" role="feed">
+                  <div class="mt-loading-spinner"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="assets/js/mastodon-timeline.umd.js"></script>
+<script src="assets/js/mastodon.js"></script>
+
 
   </main>
 

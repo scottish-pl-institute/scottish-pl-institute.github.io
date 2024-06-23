@@ -68,6 +68,10 @@ body {
   font-family: var(--default-font);
 }
 
+main {
+    padding-bottom: 25px;
+}
+
 a {
   color: var(--accent-color);
   text-decoration: none;
@@ -601,7 +605,7 @@ section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 60px 0;
+  padding: 40px 0;
   scroll-margin-top: 100px;
   overflow: clip;
 }
@@ -619,7 +623,7 @@ section,
 --------------------------------------------------------------*/
 .section-title {
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
   position: relative;
 }
 
@@ -2405,4 +2409,9 @@ text-align:center;
 .logos img {
 width:220px;
 padding:25px;
+}
+
+.mastodon-timeline {
+    overflow-y: scroll;
+    max-height: 750px;
 }
