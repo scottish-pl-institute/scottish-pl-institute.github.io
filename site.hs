@@ -56,15 +56,18 @@ idMatch glob =
         route   idRoute
         compile copyFileCompiler
 
+-- Replaces a file extension but keeps the path
+replaceExt :: String -> Identifier -> FilePath
+replaceExt ext path = (toFilePath path) -<.> ext
 
-replaceExt :: Identifier -> String -> FilePath
-replaceExt path ext = (takeFileName (toFilePath path)) -<.> ext
+-- Replaces a file extension and discards the path
+replaceExtFilename :: String -> Identifier -> FilePath
+replaceExtFilename ext path = (takeFileName (toFilePath path)) -<.> ext
 
 -- Compiles a markdown file and routes it to an HTML file
-compileMarkdown glob pg =
+compileMarkdown glob routeFn pg =
     match glob $ do
-        let dropExt path = (takeFileName (toFilePath path)) -<.> "html"
-        route   (customRoute dropExt)
+        route   (customRoute routeFn)
         compile $ do
             sCtx <- skeletonContext Organisation
             pandocCompiler
@@ -88,12 +91,12 @@ main = hakyll $ do
     -- Events
     match "content/events/regular/*.md" $ compile pandocCompiler
     match "content/events/seminars/*.md" $ compile pandocCompiler
-    compileMarkdown "content/events/spli/*.md" Events
+    compileMarkdown "content/events/spli/*.md" (replaceExt "html") Events
     -- (also need to re-load events for the navbar)
     match "content/events/spli/*.md" $ version "navItems" $ compile pandocCompiler
 
     -- News items
-    match "content/news/*.md" $ do
+    match "content/news/*.md" $ version "compiledNews" $ do
         let itemContext = dateField "date" "%B %e, %Y" <> defaultContext
         route $ setExtension "html"
         compile $ do
@@ -103,7 +106,7 @@ main = hakyll $ do
                 >>= loadAndApplyTemplate "templates/skeleton.html" sCtx
                 >>= relativizeUrls
 
-    match "content/news/*.md" $ version "shortNews" $ compile pandocCompiler
+    match "content/news/*.md" $ compile pandocCompiler
 
     paginator <- buildPaginateWith grouper "content/news/*.md" makeId
 
@@ -112,33 +115,14 @@ main = hakyll $ do
       compile $ do
           sCtx <- skeletonContext News
           newsItems <- recentFirst =<< loadAll pattern
-          trace ("NEWS ITEMS: " ++ (show newsItems) ++ "PATTERN: " ++ (show pattern)) $ do
-            let itemsContext = constField "title" ("News - Page " ++ (show pageNum))
-                                  <> listField "posts" shortItemContext (return newsItems)
-                                  <> paginateContext paginator pageNum
-                                  <> defaultContext
-            makeItem ""
-                >>= loadAndApplyTemplate "templates/blog.html" itemsContext
-                >>= loadAndApplyTemplate "templates/skeleton.html" sCtx
-                >>= relativizeUrls
-
-    -- Redirect /news to /news/pages/1
-    version "redirects" $ createRedirects [("news/index.html", "/news/page/1")] 
-
-    -- News main page
-    {-
-    create ["news/index.html"] $ do
-        route idRoute
-        compile $ do
-            sCtx <- skeletonContext News
-            newsItems <- recentFirst =<< loadAll ("content/news/*.md" .&&. hasVersion "shortNews") :: Compiler [Item String]  
-            let itemsContext = listField "posts" shortItemContext (return newsItems) <> defaultContext
-            --
-            makeItem ""
-                >>= loadAndApplyTemplate "templates/blog.html" itemsContext
-                >>= loadAndApplyTemplate "templates/skeleton.html" sCtx
-                >>= relativizeUrls
-    -}
+          let itemsContext = constField "title" ("News - Page " ++ (show pageNum))
+                                <> listField "posts" shortItemContext (return newsItems)
+                                <> paginateContext paginator pageNum
+                                <> defaultContext
+          makeItem ""
+              >>= loadAndApplyTemplate "templates/blog.html" itemsContext
+              >>= loadAndApplyTemplate "templates/skeleton.html" sCtx
+              >>= relativizeUrls
 
     -- Main page
     match "content/about.md" $ do
@@ -150,7 +134,7 @@ main = hakyll $ do
                 (uncons picsIdents)
         route $ customRoute $ const "index.html"
         compile $ do
-            newsItems <- recentFirst =<< loadAll ("content/news/*.md" .&&. hasVersion "shortNews") :: Compiler [Item String]  
+            newsItems <- recentFirst =<< loadAll ("content/news/*.md" .&&. hasNoVersion) :: Compiler [Item String]  
             let ctx = pic1
                     <> listField "images" (bodyField "url" <> aboutInfo <> defaultContext) (return pics)
                     <> listField "posts" shortItemContext (return $ take numNewsItems newsItems) <> defaultContext
@@ -163,7 +147,8 @@ main = hakyll $ do
                 >>= relativizeUrls
 
     -- Content pages
-    compileMarkdown "content/pages/organisation.md" Organisation
+    compileMarkdown "content/pages/organisation.md" (replaceExtFilename "html") Organisation
+
     match "content/studentships/**/*.md" $ compile pandocCompiler
     create ["events.html"] $ do
         route idRoute
@@ -274,7 +259,7 @@ skeletonContext currentPage = do
     spliEvents <- loadAll ("content/events/spli/*.md" .&&. hasVersion "navItems") :: Compiler [Item String]
     eventInfo <- mapM (\itm -> do
         let ident = itemIdentifier itm
-        let url = replaceExt (itemIdentifier itm) "html"
+        let url = replaceExt "html" (itemIdentifier itm) 
         desc <- getMetadataField' ident "title"
         return (desc, url)) spliEvents
     let events = defaultEvents ++ eventInfo
@@ -302,4 +287,5 @@ grouper :: (MonadMetadata m, MonadFail m) => [Identifier] -> m [[Identifier]]
 grouper ids = (fmap (paginateEvery 5) . sortRecentFirst) ids
 
 makeId :: PageNumber -> Identifier
+makeId 1 = fromFilePath $ "news/index.html"
 makeId pageNum = fromFilePath $ "news/page/" ++ (show pageNum) ++ "/index.html"
