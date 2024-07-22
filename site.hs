@@ -259,7 +259,7 @@ skeletonContext currentPage = do
     spliEvents <- loadAll ("content/events/spli/*.md" .&&. hasVersion "navItems") :: Compiler [Item String]
     eventInfo <- mapM (\itm -> do
         let ident = itemIdentifier itm
-        let url = replaceExt "html" (itemIdentifier itm) 
+        let url = "/" ++ (replaceExt "html" (itemIdentifier itm))
         desc <- getMetadataField' ident "title"
         return (desc, url)) spliEvents
     let events = defaultEvents ++ eventInfo
