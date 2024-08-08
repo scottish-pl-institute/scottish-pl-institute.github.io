@@ -83,6 +83,8 @@ main = hakyll $ do
     idMatch "assets/img/**/*"
     idMatch "assets/css/*"
     idMatch "assets/js/*"
+    idMatch "assets/static/*"
+    idMatch "assets/static/**/*"
     idMatch "assets/vendor/**/*"
 
     -- Templates
