@@ -49,9 +49,15 @@
             <i class="$icon$"></i>
           </div>
           $endif$
+          $if(externalUrl)$
+          <a href="$externalUrl$" class="stretched-link">
+            <h3>$title$</h3>
+          </a>
+          $else$
           <a href="$url$" class="stretched-link">
             <h3>$title$</h3>
           </a>
+          $endif$
           <p>$description$</p>
         </div>
       </div><!-- End Service Item -->
