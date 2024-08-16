@@ -52,4 +52,5 @@ Please sign up if you plan to attend (and cancel if you change your mind). This 
 
   * [Thursday 8th August, Lecture 1](https://ed-ac-uk.zoom.us/recording/detail?meeting_id=OTMrIEt2RFKYhncFWBDDMw%3D%3D)
   * [Thursday 8th August, Lecture 2](https://ed-ac-uk.zoom.us/recording/detail?meeting_id=nqqmsBW9TZeTh7As%2BKbbjA%3D%3D)
+  * (Thursday 15th August, Lecture 1 was not recorded)
   * [Thursday 15th August, Lecture 2](https://ed-ac-uk.zoom.us/rec/share/mxKJ1rGM5ZFnJUt-ZQlp9KXh7Lwmod5sVgiZRb-TS2QMQH9GJ5We6ROomKZfxbLI.9xnNelRtNteHPif2)
