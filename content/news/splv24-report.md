@@ -1,17 +1,9 @@
 ---
 title: University of Strathclyde hosts successful SPLV'24
 published: 2024-08-21
-img: /assets/img/news-content/splv-stencil.jpg
 ---
 
-From the 29th July to 2nd August 2024,
-the fifth edition of the
-[Scottish Programming Languages & Verification Summer School](https://spli.scot/splv/2024-strathclyde/)
-(SPLV 2024)
-was organised by the
-[MSP Group](https://msp.cis.strath.ac.uk/)
-of the
-[University of Strathclyde](https://strath.ac.uk/).
+From the 29th July to 2nd August 2024, the fifth edition of the [Scottish Programming Languages & Verification Summer School](https://spli.scot/splv/2024-strathclyde/) (SPLV 2024) was organised by the [MSP Group](https://msp.cis.strath.ac.uk/) of the [University of Strathclyde](https://strath.ac.uk/).
 
 With 58 attendees from around the world,
 (including Scotland, England, the EU, and USA)
