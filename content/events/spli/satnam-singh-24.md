@@ -3,13 +3,19 @@ title: SPLI Distinguished Lecture -- Satnam Singh
 description: As part of the SPLI Distinguished Lecture series, Satnam Singh, Fellow at Groq, will give an SPLI Distinguished Lecture about accelerating LLMs. Satnam's lecture will be held at the University of Edinburgh.
 ---
 
+As part of the SPLI Distinguished Lecture series, Satnam Singh, Fellow at Groq, will give an SPLI Distinguished Lecture about accelerating LLMs. Satnam's lecture will be held at the University of Edinburgh.
+
 # Talk Details
 
-**Title** Accelerating Large Language Models with Groq’s LPU Machine Learning Chips
+**Title:** Accelerating Large Language Models with Groq’s LPU Machine Learning Chips
 
-**Speaker** Satnam Singh, Fellow, Groq
+**Speaker:** Satnam Singh, Fellow, Groq
 
-**Abstract**
+**Location:** Informatics Forum, G.07
+
+**Time:** Thursday 26th September, 4PM
+
+**Abstract:**
 Groq’s Language Processing Unit (LPU) chips are reshaping the landscape of large language model (LLM) deployment at scale. By prioritizing low latency and high throughput, our hardware and software stack enables rapid and efficient inference, making it ideal for applications where LLMs must be invoked repeatedly by agents e.g. for solving mathematical problems.
 
 In this talk I will describe the unique architecture of Groq’s LPU chips, which leverage deterministic execution and distributed SRAM to deliver remarkable performance with very low latency and high throughput. I will explain how this determinism allows us to deploy complex models such as Llama3-70B, Gemma2, and Mixtral 8x7B with predictable, scalable performance.
