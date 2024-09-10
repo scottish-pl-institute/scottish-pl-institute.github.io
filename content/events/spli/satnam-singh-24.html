@@ -78,7 +78,7 @@
       </ol>
     </nav>
       -->
-    <h1>SPLI Distinguished Lecture Series -- Prof. Daniele Gorla</h1>
+    <h1>SPLI Distinguished Lecture -- Satnam Singh</h1>
   </div>
 </div><!-- End Page Title -->
 
@@ -88,42 +88,20 @@
   <div class="container">
     <div class="row">
         <div class="col-sm content">
-            <h2 id="overview">Overview</h2>
-<p><em>Prof. Daniele Gorla (“Sapienza” University of Rome) will give a 9 hours PhD course
-Thursday 8, 15 and 22 August from 11:00 to 15:00 in IF G.03 (Edinburgh)</em></p>
-<p>Sign up by the 1st August 2024 on <a href="https://doodle.com/meeting/organize/id/av96P1ge">Doodle</a>
-(or e-mail Rob van Glabbeek if you do not like Doodle).</p>
-<p>You can also participate remotely on <a href="https://ed-ac-uk.zoom.us/j/83428825005">Zoom</a> (passcode 1n3AHhVL); if you like calendar invites you can download the <a href="https://ed-ac-uk.zoom.us/meeting/tZcpdeGgrD4qGtGioZsfoLxmhUFy002a0Ynx/ics?icsToken=98tyKuGrqjkiEtaQsBmCRpwqBojoWfzzpiVfjbd6lRDfECZcThv7PtdkK-IvQtmA">.ics files</a>.</p>
-<h2 id="details">Details</h2>
-<p>This mini-course is focused on the foundational aspects of concurrent systems. The aim of these lectures is to describe the main characteristics and the basilar problems of every concurrent system (mutual exclusion, synchronization, atomicity, deadlock/livelock/starvation, …) and the relative solutions at the implementation level (semaphores, monitors, system primitives, …). Furthermore, more evolute notions are shown, like: failure detectors, their implementation and their use to obtain wait-free implementations; universal object, consensus object and consensus number.</p>
-<p>The detailed syllabus of the course is the following:</p>
-<ul>
-<li><p>The mutual exclusion problem; safety and liveness properties; a hierarchy of liveness properties (bounded bypass; starvation freedom; deadlock freedom).</p></li>
-<li><p>Atomic read/write registers; mutex for 2 processes (Peterson algorithm) and for n processes (generalized Peterson algorithm). Other lock/unlock protocols with better time performances.</p></li>
-<li><p>From Deadlock freedom to Starvation freedom (and bounded bypass) using atomic r/w-registers.</p></li>
-<li><p>Mutex with specialized HW primitives (test &amp; set; swap; compare &amp; fetch &amp; add).</p></li>
-<li><p>Mutex with safe registers: Lamport’s Bakery algorithm and Aravind bounded algorithm.</p></li>
-<li><p>Higher-level programming constructs for Mutex: semaphores and monitors, and their application for solving standard problems (producers/consumers; rendez-vous; dining philosophers).</p></li>
-<li><p>Mutex-free concurrency: liveness conditions (obstruction freedom, non-blocking, and wait freedom).</p></li>
-<li><p>Universal object, consensus object, and universality of consensus. Binary vs multivalued consensus. Consensus number (for atomic R/W registers, test &amp; set, swap, fetch &amp; add, compare &amp; swap) and consensus hierarchy.</p></li>
-</ul>
-<p>The classes will be mostly focused on the algorithmic aspects of concurrency; they will provide the main ideas underlying the various problems and their relative solutions, without entering into many technical proofs. Full details can be found in the book by Michel Raynal “Concurrent Programming: Algorithms, Principles and Foundations” (Springer, 2013), which is the reference text for the lectures. No prior knowledge will be assumed.</p>
-<p>The course will be organized in 6 classes of 1.5 hours each, arranged in 3 days (2 classes a day) of 3 consecutive weeks (1 day per week); the first 5 classes will provide normal lectures whereas the closing class will be a discussion on open problems and possible connections with the research topics of the attendees.</p>
-<p>The course will take place in the Informatics Forum, Room G.03, of the University of Edinburgh. The first class will start at 11am; then, at 12.30pm there will be a 1-hour lunch break (with a light lunch provided by the University of Edinburgh); finally, from 1.30pm there will be the second class. In this way also students coming from other Scottish universities can attend the course without having to sleep in Edinburgh.</p>
-<p>Please sign up if you plan to attend (and cancel if you change your mind). This helps planning catering. In fact, to join for lunch you should let us know by the 1st August 2024. But you will be welcome to the lectures even if you have not signed up.</p>
-<h2 id="slides">Slides</h2>
-<ul>
-<li><a href="../../../assets/static/gorla/class1.pdf">Class 1</a></li>
-<li><a href="../../../assets/static/gorla/class2.pdf">Class 2</a></li>
-<li><a href="../../../assets/static/gorla/class3.pdf">Class 3</a></li>
-</ul>
-<h2 id="lecture-recordings">Lecture Recordings</h2>
-<ul>
-<li><a href="https://ed-ac-uk.zoom.us/recording/detail?meeting_id=OTMrIEt2RFKYhncFWBDDMw%3D%3D">Thursday 8th August, Lecture 1</a></li>
-<li><a href="https://ed-ac-uk.zoom.us/recording/detail?meeting_id=nqqmsBW9TZeTh7As%2BKbbjA%3D%3D">Thursday 8th August, Lecture 2</a></li>
-<li>(Thursday 15th August, Lecture 1 was not recorded)</li>
-<li><a href="https://ed-ac-uk.zoom.us/rec/share/mxKJ1rGM5ZFnJUt-ZQlp9KXh7Lwmod5sVgiZRb-TS2QMQH9GJ5We6ROomKZfxbLI.9xnNelRtNteHPif2">Thursday 15th August, Lecture 2</a></li>
-</ul>
+            <h1 id="talk-details">Talk Details</h1>
+<p><strong>Title</strong> Accelerating Large Language Models with Groq’s LPU Machine Learning Chips</p>
+<p><strong>Speaker</strong> Satnam Singh, Fellow, Groq</p>
+<p><strong>Abstract</strong>
+Groq’s Language Processing Unit (LPU) chips are reshaping the landscape of large language model (LLM) deployment at scale. By prioritizing low latency and high throughput, our hardware and software stack enables rapid and efficient inference, making it ideal for applications where LLMs must be invoked repeatedly by agents e.g. for solving mathematical problems.</p>
+<p>In this talk I will describe the unique architecture of Groq’s LPU chips, which leverage deterministic execution and distributed SRAM to deliver remarkable performance with very low latency and high throughput. I will explain how this determinism allows us to deploy complex models such as Llama3-70B, Gemma2, and Mixtral 8x7B with predictable, scalable performance.</p>
+<p>I will describe the architecture of our compiler which is built on the MLIR framework for the front end, and a Haskell-based backend. Further, I will discuss the network architecture that facilitates efficient multi-rack deployments of LLMs using Kubernetes, ensuring that scaling up does not compromise performance.</p>
+<p>Finally, I will share insights from my own direct contributions to the project, including the design of special power management hardware, developing a Haskell-based domain-specific language for programming our chips, and applying formal verification techniques using temporal logic and model checking to verify the functionality of our chip designs.</p>
+<p>Try out our LLM chatbot at http://groq.com</p>
+<h1 id="biography">Biography</h1>
+<p>Satnam Singh is a Fellow at Groq where he applies the power of functional programming languages to the design of machine learning chips and their programming models. Satnam Singh previously worked at Google (machine learning chips, cluster management, Kubernetes), Facebook (Android optimization), Microsoft (parallel and concurrent programming) and Xilinx (Lava DSL for hardware design, formal verification of hardware). He started his career as an academic at the University of Glasgow (FPGA-based application acceleration and functional programming).</p>
+<p>His research interests include functional programming in Haskell, high level techniques for hardware design (Lava, Bluespec, DSLs in Haskell, Coq and C#), formal methods (SAT-solvers, model checkers, theorem provers), FPGAs, and concurrent and parallel programming.</p>
+<h1 id="location">Location</h1>
+<p>The talk will be held at the <a href="https://informatics.ed.ac.uk/about/location">Informatics Forum</a>, University of Edinburgh.</p>
         </div>
     </div>
   </div>
