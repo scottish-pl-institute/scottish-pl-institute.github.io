@@ -1,9 +1,9 @@
 ---
 title: SPLI Distinguished Lecture -- Satnam Singh
-description: As part of the SPLI Distinguished Lecture series, Satnam Singh, Fellow at Groq, will give an SPLI Distinguished Lecture about accelerating LLMs. Satnam's lecture will be held at the University of Edinburgh.
+description: As part of the SPLI Distinguished Lecture series, joint with the University of Edinburgh's institutional seminar series, Satnam Singh, Fellow at Groq, will give an SPLI Distinguished Lecture about accelerating LLMs.
 ---
 
-As part of the SPLI Distinguished Lecture series, Satnam Singh, Fellow at Groq, will give an SPLI Distinguished Lecture about accelerating LLMs. Satnam's lecture will be held at the University of Edinburgh.
+As part of the SPLI Distinguished Lecture series, and joint with the University of Edinburgh's AIAI, ANC, ICSA, ILCC, IPAB, LFCS institutional seminar series, Satnam Singh, Fellow at Groq, will give an SPLI Distinguished Lecture about accelerating LLMs. Satnam's lecture will be held at the University of Edinburgh.
 
 # Talk Details
 
