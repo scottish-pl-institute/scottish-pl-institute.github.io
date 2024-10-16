@@ -46,6 +46,7 @@ title: Organisation
 <div class="logos">
 <a href="https://www.actyx.com/"><img style="padding-bottom:6px; width:200px;" src="/assets/img/logos/logo_actyx.svg" alt="Actyx Logo"/></a>
 <a href="https://codeplay.com/"><img src="/assets/img/logos/logo_codeplay.svg" alt="Codeplay Logo"/></a>
+<a href="https://cogna.co/"><img src="/assets/img/logos/logo_cogna.svg" alt="Cogna Logo"/></a>
 <a href="https://www.erlang-solutions.com/"><img src="/assets/img/logos/logo_erlang.svg" alt="Erlang Solutions Logo"/></a>
 <a href="https://www.google.com/"><img src="/assets/img/logos/logo_google.svg" alt="Google Logo"/></a>
 <a href="https://www.huawei.com/"><img src="/assets/img/logos/logo_huawei.svg" alt="Huawei Logo"/></a>
