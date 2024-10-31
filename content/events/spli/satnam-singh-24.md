@@ -5,6 +5,9 @@ description: As part of the SPLI Distinguished Lecture series, joint with the Un
 
 As part of the SPLI Distinguished Lecture series, and joint with the University of Edinburgh's AIAI, ANC, ICSA, ILCC, IPAB, LFCS institutional seminar series, Satnam Singh, Fellow at Groq, will give an SPLI Distinguished Lecture about accelerating LLMs. Satnam's lecture will be held at the University of Edinburgh.
 
+# Recording
+Satnam's talk was recorded, and is now available on [YouTube](https://www.youtube.com/watch?v=_VrAhB4mCfM).
+
 # Talk Details
 
 **Title:** Accelerating Large Language Models with Groq’s LPU Machine Learning Chips
