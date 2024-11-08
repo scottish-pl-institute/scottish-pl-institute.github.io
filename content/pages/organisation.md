@@ -63,5 +63,5 @@ title: Organisation
 We are grateful to the [Scottish Informatics and Computer Science Alliance (SICSA)](https://sicsa.ac.uk) for organisational and financial support.
 
 <div class="logos">
-    <a href="https://sicsa.ac.uk"><img style="width:250px;" src="/assets/img/logos/sicsa.png"/></a>
+<a href="https://sicsa.ac.uk"><img style="width:250px;" src="/assets/img/logos/sicsa.png"/></a>
 </div>
