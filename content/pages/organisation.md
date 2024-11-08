@@ -57,3 +57,11 @@ title: Organisation
 <a href="https://www.tweag.io/"><img src="/assets/img/logos/logo_tweag.svg" alt="Tweag Logo"/></a>
 <a href="https://www.well-typed.com/"><img src="/assets/img/logos/logo_well-typed.svg" alt="Well-Typed Logo"/></a>
 </div>
+
+## Organisation and Financial Support
+
+We are grateful to the [Scottish Informatics and Computer Science Alliance (SICSA)](https://sicsa.ac.uk) for organisational and financial support.
+
+<div class="logos">
+    <a href="https://sicsa.ac.uk"><img style="width:250px;" src="/assets/img/logos/sicsa.png"/></a>
+</div>
