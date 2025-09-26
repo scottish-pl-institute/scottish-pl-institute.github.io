@@ -19,6 +19,7 @@ title: Organisation
 - Matthew Alan Le Brun (University of Glasgow)
 - Sam Lindley (The University of Edinburgh)
 - Patrick Maier (University of Stirling)
+- Cristina Matache (The University of Edinburgh)
 - Filip Sieczkowski (Heriot-Watt University)
 - André Videla (University of Strathclyde)
 
