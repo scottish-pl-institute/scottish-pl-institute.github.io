@@ -9,7 +9,6 @@ title: Organisation
 
 ## Steering Committee
 
-- Ricardo Almeida (The University of Edinburgh)
 - **Secretary:** Robert Atkey (University of Strathclyde)
 - Christopher Brown (University of St Andrews)
 - Mun See Chang (University of St Andrews)
@@ -25,8 +24,9 @@ title: Organisation
 
 ## SPLV Representatives
 
-- **SPLV 2024 organiser:** Guillaume Allais (University of Strathclyde)
-- **SPLV Steering Committee Chair:** James Cheney (The University of Edinburgh)
+- **SPLV 2025 organiser:** Sam Lindley (The University of Edinburgh)
+- **SPLV 2026 organiser:** Simon Fowler (University of Glasgow)
+- **SPLV Steering Committee Chair:** Jeremy Singer (University of Glasgow)
 
 ## Member Institutions
 
