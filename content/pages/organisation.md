@@ -4,23 +4,21 @@ title: Organisation
 
 ## Directors
 
-- **Director:** Simon Gay (University of Glasgow)
-- **Co-directors:** Conor McBride (University of Strathclyde) and Ekaterina Komendantskaya (Heriot-Watt University)
+- **Director:** Conor McBride (University of Strathclyde)
+- **Deputy directors:** Sam Lindley (The University of Edinburgh) and Susmit Sarkar (University of St Andrews)
 
 ## Steering Committee
 
 - **Secretary:** Robert Atkey (University of Strathclyde)
-- Christopher Brown (University of St Andrews)
-- Mun See Chang (University of St Andrews)
+- **Publicity chair**: Janis Bailitis (Heriot-Watt University)
+- Adam Barwell (University of St Andrews)
 - Ornela Dardha (University of Glasgow)
-- **Publicity chair**: Simon Fowler (University of Glasgow)
+- Swaraj Dash (Heriot-Watt University)
 - Paul Keir (University of the West of Scotland)
 - Matthew Alan Le Brun (University of Glasgow)
-- Sam Lindley (The University of Edinburgh)
+- Ohad Kammar (The University of Edinburgh)
 - Patrick Maier (University of Stirling)
-- Cristina Matache (The University of Edinburgh)
-- Filip Sieczkowski (Heriot-Watt University)
-- André Videla (University of Strathclyde)
+- Kashish Raimalani (The University of Edinburgh)
 
 ## SPLV Representatives
 
