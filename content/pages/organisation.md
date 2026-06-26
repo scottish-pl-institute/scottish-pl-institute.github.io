@@ -19,6 +19,7 @@ title: Organisation
 - Ohad Kammar (The University of Edinburgh)
 - Patrick Maier (University of Stirling)
 - Kashish Raimalani (The University of Edinburgh)
+- Bhakti Shah (University of St Andrews)
 
 ## SPLV Representatives
 
