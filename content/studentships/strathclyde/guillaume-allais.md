@@ -2,4 +2,4 @@
 title: Guillaume Allais
 url: https://gallais.github.io/
 ---
-Type-driven programming, Correct-by-construction methodology, Proof automation, Generic programming, User experience of interactive compilers
+type-driven programming, correct-by-construction methodology, proof automation, generic programming, user experience of interactive compilers

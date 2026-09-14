@@ -3,4 +3,4 @@ title: Ohad Kammar
 url: https://denotational.co.uk/
 pic: /assets/img/profile-pics/ohad-kammar.jpg
 ---
-Programming-language theory, Probabilistic programming, Meta programming, Category theory, Logic in Computer Science
+programming-language theory, probabilistic programming, meta programming, category theory, logic in Computer Science
