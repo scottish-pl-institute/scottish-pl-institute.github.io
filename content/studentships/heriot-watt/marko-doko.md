@@ -3,4 +3,4 @@ title: Marko Doko
 url: https://www.macs.hw.ac.uk/~md2021/
 pic: /assets/img/profile-pics/marko-doko.jpg
 ---
-
+weak memory concurrency, logic in computer science, foundations of mathematics
