@@ -4,7 +4,7 @@ title: Organisation
 
 ## Directors
 
-- **Director:** Conor McBride (University of Strathclyde)
+- **Director:** Conor Titania McBride (University of Strathclyde)
 - **Deputy directors:** Sam Lindley (The University of Edinburgh) and Susmit Sarkar (University of St Andrews)
 
 ## Steering Committee
