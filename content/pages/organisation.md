@@ -20,6 +20,7 @@ title: Organisation
 - Patrick Maier (University of Stirling)
 - Kashish Raimalani (The University of Edinburgh)
 - Bhakti Shah (University of St Andrews)
+- Rin Liu (University of Strathclyde)
 
 ## SPLV Representatives
 
